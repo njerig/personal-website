@@ -1,0 +1,186 @@
+---
+layout: nil
+---
+/*-----COLOR-----*/
+$yellow: #ffb42d;
+$bg: #fff;
+$not-quite-black: #1f1400;
+$candy: #dc143c;
+
+
+/*-----FONT-----*/
+$console: "Karla", Monaco, monospace;
+@import "https://fonts.googleapis.com/css?family=Karla:400,700";
+
+/*____________________________________________*/
+
+// color definitions
+.yellow {
+  color: $yellow;
+}
+
+.inverted-yellow {
+  color: $bg;
+  background-color: $yellow;
+}
+
+.candy {
+  color: $candy;
+}
+
+.inverted-candy {
+  color: $bg;
+  background-color: $candy;
+}
+
+.inverted-black {
+  color: $bg;
+  background-color: $not-quite-black;
+}
+
+/*____________________________________________*/
+
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: $console;
+  background-color: $bg;
+}
+
+
+header {
+  @extend .container;
+  font-weight: bold;
+}
+
+main {
+  flex: 1;
+  overflow: auto;
+  
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+footer {
+  flex: none;
+  padding: 2%;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: $yellow;
+}
+
+h1,
+h2, 
+h3 { margin: 40px 0; }
+
+p { margin: 1.5em 0; }
+
+a {
+  text-decoration: none;
+  
+  &:link, 
+  &:visited {
+    @extend .yellow;
+  }
+  &:hover, 
+  &:active {
+    @extend .inverted-yellow;
+    padding: 0 4px;
+  }
+}
+
+img { max-width: 100%; }
+
+article {
+  font-weight: normal;
+}
+
+small {
+  font-weight: normal;
+}
+
+.container {
+  float: left;
+  width: 96%;
+  padding: 2%;
+}
+.heading {
+  padding: 0 4px;
+  font-size: 30px;
+  line-height: 35px;
+  color: $bg;
+  background-color: $not-quite-black;
+}
+.site-title {
+  > a {
+    @extend .heading;
+    &:hover, &:active {
+      color: $not-quite-black;
+      background-color: $bg;
+    }
+  }
+}
+.quick-links { margin: 1.5em 0; }
+.classification {
+  display: block;
+  font-weight: normal;
+  h4 { display: inline; }
+  ul {
+    display: inline;
+    padding: 0;
+
+    li {
+      display: inline;
+      list-style-type: none;
+      &:after {
+        content: "/ ";
+      }
+      &:last-child:after {
+        content: none;
+      }
+    }
+  }
+}
+.box {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  background-color: $bg;
+}
+
+/*************** index/archive/category pages *****************/
+
+.month-header {
+  @extend .inverted-black;
+  padding: 0 4px;
+  font-size: 20px;
+}
+
+#post-title {
+  font-family: $console;
+  font-size: 25px;
+  line-height: 50px;
+}
+
+#teaser {
+  max-width: 60%;
+  margin-left: 50px;
+  font-weight: normal;
+}
+
+ul.archive-posts,
+ul.category-posts,
+ul.tag-posts {
+  padding: 0;
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+/**************************************************************/
