@@ -1,0 +1,197 @@
+---
+---
+
+/*-----COLOR-----*/
+
+$black: #000;
+$grey: #828282;
+$bg: #fff;
+$kb-orange: #fd6f31;
+$tw-blue: #00aced;
+
+
+
+/*-----FONT-----*/
+@font-face {
+  font-family: HKGrotesk-Light;
+        src: url('../font/HKGrotesk-Light.woff') format('woff'),
+             url('../font/HKGrotesk-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: HKGrotesk-LightItalic;
+        src: url('../font/HKGrotesk-LightItalic.woff') format('woff'),
+             url('../font/HKGrotesk-LightItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: HKGrotesk-Regular;
+        src: url('../font/HKGrotesk-Regular.woff') format('woff'),
+             url('../font/HKGrotesk-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: HKGrotesk-Semibold;
+        src: url('../font/HKGrotesk-Semibold.woff') format('woff'),
+             url('../font/HKGrotesk-Semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: HKGrotesk-SemiboldItalic;
+        src: url('../font/HKGrotesk-SemiboldItalic.woff') format('woff'),
+             url('../font/HKGrotesk-SemiboldItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: HKGrotesk-Bold;
+        src: url('../font/HKGrotesk-Bold.woff') format('woff'),
+             url('../font/HKGrotesk-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: HKGrotesk-BoldItalic;
+        src: url('../font/HKGrotesk-BoldItalic.woff') format('woff'),
+             url('../font/HKGrotesk-BoldItalic.woff2') format('woff2');
+}
+
+$font-backup: Helvetica, sans-serif;
+
+$hk-light: HKGrotesk-Light, $font-backup;
+$hk-light-em: HKGrotesk-LightItalic, $font-backup;
+$hk-regular: HKGrotesk-Regular, $font-backup;
+$hk-semibold: HKGrotesk-Semibold, $font-backup;
+$hk-semibold-em: HKGrotesk-SemiboldItalic, $font-backup;
+$hk-bold: HKGrotesk-Bold, $font-backup;
+$hk-bold-em: HKGrotesk-BoldItalic, $font-backup;
+
+/*____________________________________________*/
+
+html { height: 100%; }
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: $hk-regular;
+  background-color: $bg;
+}
+
+header {
+  @extend .container;
+  font-weight: bold;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  padding: 3rem 1.5rem;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+h1,
+h2, 
+h3 { margin: 40px 0; }
+
+p {
+  margin: 1.5em 0;
+  > strong {
+    font-family: $hk-semibold;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover, &:active {
+    font-style: italic;
+  }
+}
+
+img { max-width: 100%; }
+
+article {
+  font-weight: normal;
+}
+
+small {
+  font-weight: normal;
+}
+
+.container,
+#header-container,
+#content-container,
+#footer-container {
+  float: left;
+  width: 96%;
+  padding: 2%;
+}
+.heading {
+  padding: 0 4px;
+  color: $black;
+}
+.site-title {
+  font-family: $hk-bold;
+  font-size: 48px;
+}
+
+.quick-links { margin: 1.5em 0; }
+.classification {
+  display: block;
+  font-weight: normal;
+  h4 { display: inline; }
+  ul {
+    display: inline;
+    padding: 0;
+
+    li {
+      display: inline;
+      list-style-type: none;
+      &:after {
+        content: "/ ";
+      }
+      &:last-child:after {
+        content: none;
+      }
+    }
+  }
+}
+.box {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  background-color: $bg;
+}
+
+/*************** index/archive/category pages *****************/
+
+.month-header {
+  padding: 0 4px;
+  font-size: 20px;
+}
+
+#post-title {
+  font-size: 25px;
+  line-height: 50px;
+}
+
+#teaser {
+  max-width: 60%;
+  margin-left: 50px;
+  font-weight: normal;
+}
+
+ul.archive-posts,
+ul.category-posts,
+ul.tag-posts {
+  padding: 0;
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+/**************************************************************/
