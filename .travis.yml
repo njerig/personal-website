@@ -1,17 +1,16 @@
 language: ruby
 rvm:
   - 2.4
-script:
-  - bundle exec jekyll build
-  - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
-env:
-  global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
+install: gem install bundler htmlproofer jekyll-sitemap
+
+script: scripts/ci-build.sh
 
 branches:
   only:
     - master
     - dev
 
-before_install:
-  - gem install bundler
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
