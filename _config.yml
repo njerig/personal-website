@@ -14,5 +14,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+exclude: [vendor]
+
 sass:
   sass-dir: _sass
