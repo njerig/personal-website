@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 2.4
 
-install: gem install bundler htmlproofer jekyll-sitemap
+install: gem install bundler html-proofer jekyll-sitemap
 
 script: scripts/ci-build.sh
 
