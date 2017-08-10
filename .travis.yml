@@ -3,7 +3,7 @@ rvm:
   - 2.4
 
 before_install:
-  - chmod +x ci-build.sh
+  - chmod +x scripts/ci-build.sh
 
 install: gem install bundler html-proofer jekyll-sitemap
 
