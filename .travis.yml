@@ -1,0 +1,21 @@
+language: ruby
+rvm:
+  - 2.4
+
+before_install:
+  - chmod +x scripts/ci-build.sh
+
+install:
+  - gem install bundler html-proofer jekyll-sitemap
+  - bundle install
+
+script: scripts/ci-build.sh
+
+branches:
+  only:
+    - master
+    - dev
+
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
