@@ -88,9 +88,10 @@ main {
 }
 
 footer {
-  padding: 3rem 1.5rem;
+  @extend .container;
+  border-top: 2px solid;
   font-size: 14px;
-  font-weight: bold;
+  font-family: $hk-semibold;
 }
 
 h1,
@@ -125,10 +126,7 @@ small {
   font-weight: normal;
 }
 
-.container,
-#header-container,
-#content-container,
-#footer-container {
+.container {
   float: left;
   width: 96%;
   padding: 2%;
