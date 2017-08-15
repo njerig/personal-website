@@ -105,11 +105,13 @@ p {
 }
 
 a {
+  font-family: $hk-semibold;
   color: inherit;
   text-decoration: none;
+  cursor: auto;
 
   &:hover, &:active {
-    font-style: italic;
+    text-decoration: underline;
   }
 }
 
