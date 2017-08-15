@@ -5,8 +5,10 @@ layout: blank
   <span class="site-title"><a href=".">njerig</a></span>
   <nav class="quick-links">
     {% for item in site.data.nav.main %}
-       <a href="{{ item.url }}">{{ item.title }}</a>
-      {% if forloop.last == false %} :: {% endif %}
+      {% unless item.url contains "#" %}
+        <a href="{{ item.url }}">{{ item.title }}</a>
+        {% if forloop.last == false %} :: {% endif %}
+      {% endunless %}
     {% endfor %}
   </nav>
 </header>
