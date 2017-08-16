@@ -116,14 +116,16 @@ a {
   }
 }
 
-img { max-width: 100%; }
-
-article {
-  font-weight: normal;
+img { 
+  max-width: 100%;
+  height:
 }
 
-small {
-  font-weight: normal;
+@media (min-width: 330px) {
+  img {
+    width: 330px;
+    height: auto;
+  }
 }
 
 .container {
