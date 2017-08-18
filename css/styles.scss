@@ -69,7 +69,6 @@ $hk-bold-em: HKGrotesk-BoldItalic, $font-backup;
 html { height: 100%; }
 
 body {
-  margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -78,7 +77,6 @@ body {
 }
 
 header {
-  @extend .container;
   font-weight: bold;
 }
 
@@ -87,7 +85,8 @@ main {
 }
 
 footer {
-  @extend .container;
+  margin: 0;
+  padding: 10px 20px;
   border-top: 2px solid;
   font-size: 14px;
   font-family: $hk-semibold;
@@ -115,14 +114,29 @@ a {
   }
 }
 
-img { max-width: 100%; }
-
-article {
-  font-weight: normal;
+img { 
+  max-width: 100%;
+  height: auto;
 }
 
-small {
-  font-weight: normal;
+@media (min-width: 330px) {
+  img {
+    width: 330px;
+    height: auto;
+  }
+}
+
+.not-footer {
+  margin: 20px auto;
+  max-width: 300px;
+  min-height: 100%;
+  flex: 1 0 auto;
+}
+
+@media (max-width: 330px) {
+  .not-footer {
+    margin: 20px;
+  }
 }
 
 .container {
@@ -139,7 +153,10 @@ small {
   font-size: 48px;
 }
 
-.quick-links { margin: 1.5em 0; }
+.quick-links { 
+  margin: 1.5em 0;
+  font-family: $hk-light;
+}
 .classification {
   display: block;
   font-weight: normal;
