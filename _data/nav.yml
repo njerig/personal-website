@@ -2,6 +2,10 @@ main:
   - title: blog
     url: "#"
 
+  - title: colophon
+    url: "/colophon"
+
+social:
   - title: email
     url: "mailto:njerig@mit.edu"
 

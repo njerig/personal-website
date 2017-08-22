@@ -1,0 +1,26 @@
+
+<footer>
+  <nav class="social">
+    {% for item in site.data.nav.social %}
+      {% unless item.url contains "#" %}
+
+        {% if item.title contains "github" %}
+          <a id="gh" href="{{ item.url }}">{{ item.title }}</a>
+
+        {% elsif item.title contains "keybase" %}
+          <a id="kb" href="{{ item.url }}">{{ item.title }}</a>
+
+        {% elsif item.title contains "twitter" %}
+          <a id="tw" href="{{ item.url }}">{{ item.title }}</a>
+
+        {% else %}
+        <a href="{{ item.url }}">{{ item.title }}</a>
+
+        {% endif %}
+        {% if forloop.last == false %} :: {% endif %}
+        
+      {% endunless %}
+    {% endfor %}
+  </nav>
+  © njerig 2017
+</footer>
