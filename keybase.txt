@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/njerig
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://njerig.me
+  * I am njerig (https://keybase.io/njerig) on keybase.
+  * I have a public key with fingerprint 964E 4323 DF9B 9938 CC65  E755 FF7E 5641 C901 1335
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101586618b2f8d164feb533796a36b4d340491d670a4a9f137a438c3fd28ac292e10a",
+      "fingerprint": "964e4323df9b9938cc65e755ff7e5641c9011335",
+      "host": "keybase.io",
+      "key_id": "ff7e5641c9011335",
+      "kid": "0101586618b2f8d164feb533796a36b4d340491d670a4a9f137a438c3fd28ac292e10a",
+      "uid": "cca36cd409ea2a09e735f0cc11fc8a19",
+      "username": "njerig"
+    },
+    "service": {
+      "hostname": "njerig.me",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1503429821,
+  "expire_in": 157680000,
+  "prev": "a76700a22ed6930a641e64f4179fd2915414106e00c21367dc46f1af067fe981",
+  "seqno": 20,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.73
+Comment: https://keybase.io/crypto
+
+yMIfAnicrVJbSBVBGD4nTTtaUSAEalEjIdXBZvYyu3OIHiwNrJfKh+6H2d3Z45bu
+HvesZon4YiUIPWQXg6IyyJcoLMHoQmWmqJHZhTKkKFCKSowKNAublXoIemwe5vLP
+933zfx/TOScpkBZ8Ud4UfxP7YQf77h6pCGw9VXerGmiOsQ9EqsEeNr2wUoMlvOge
+ywARABFEsooxUjXBVA2EJZNpsigqBFMRa5IhSlAiyMAKpBIlJhIVKomqLpqGoFJd
+IAJDkIIwMC07xty4a9kelyVYYpIoiIZJNEI4XscyU2TZNBUmYwnpBCIkijInljgJ
+n8Gb02iC5VkOr/FDdLq9f+D/c98V03K6zlm6IUHCqED5rIiyCXUdIVNXKSI+MMFc
+m5YxjrZ3M9eKgZow4LVKS2d+rL6Pv+7z+D4M4q7jObpTysslnheP+CxvX9yH7WVa
+9LdAVLNsgyfICZXMTViODSKII3XP8hWRDEVJIKqAwoBVxS2XRS0fIStYhXz4z7BK
+LkkVbhhSQWAGJiKkPDrGo5GQQrhxgmQJSQhiBqEuIBErhi5hE1ETYsVkREXAt1Ru
+OyAicFGPxrhmworZ1KtwGajpuLMjORBMC6TMnOF/rUBaaN6fD7difurULg93yfmH
++wvOfPmIi05uDoVHvn5ZXveq9mrt2g9NZQca7yU1T/RkPl1atOBcsXtj+2T9+FTo
+/IrPU5Ox1I6DfaFFJ9YXFmRJSx5s2HI8q9sYHmhZPNX6M3nVk7lNxcGF10Fx9NHA
+ZG7qhdVJr3bez5nQ672+tIzxwvSUwpa+sz1HxxoGM4eejz55iS6vG6nLup3xvCb/
+5IZ2O1t51vCe5GXPAb3bJjRhf2ZNJJQ71p3zOHcwpT4HzHo4XPLi07VNqcfebRxu
+z389uqi6qOxbypC9rL+x7VLv6f5gZdPSruVvqy6eqq6/ktzanMjQYPrNzkttu9XR
+72Wth3Jn16505Ik17i8iOz5V
+=JVby
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/njerig
+
+==================================================================
