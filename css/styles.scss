@@ -68,6 +68,9 @@ $hk-bold: HKGrotesk-Bold, $font-backup;
 $hk-bold-em: HKGrotesk-BoldItalic, $font-backup;
 
 /*____________________________________________*/
+html, body {
+  margin: 0;
+}
 
 html { height: 100%; }
 
