@@ -81,15 +81,21 @@ body {
 
 header {
   font-weight: bold;
+  margin-bottom: 3em;
 }
 
-nav, nav.main, nav.social { 
-  margin: 1.5em 0;
+nav.main { 
+  margin-top: 1em;
   font-family: $hk-light;
 }
 
 nav.social {
-  a { text-decoration: underline; }
+  margin-bottom: 1.5em;
+  font-family: $hk-light;
+  a { 
+    color: $black;
+    text-decoration: underline;
+  }
   > #gh { color: $gh-grey; }
   > #kb { color: $kb-orange; }
   > #tw { color: $tw-blue; }
@@ -99,9 +105,13 @@ main {
   flex: 1;
 }
 
+section {
+  margin-top: 2em;
+}
+
 footer {
   margin: 0;
-  padding: 10px 20px;
+  padding: 20px;
   border-top: 2px solid;
   font-size: 14px;
   font-family: $hk-semibold;
