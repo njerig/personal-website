@@ -68,9 +68,6 @@ $hk-bold: HKGrotesk-Bold, $font-backup;
 $hk-bold-em: HKGrotesk-BoldItalic, $font-backup;
 
 /*____________________________________________*/
-html, body {
-  margin: 0;
-}
 
 html { height: 100%; }
 
@@ -125,7 +122,6 @@ h2,
 h3 { margin: 40px 0; }
 
 p {
-  margin: 1.5em 0;
   > strong {
     font-family: $hk-semibold;
   }
@@ -156,7 +152,7 @@ img {
 
 .not-footer {
   margin: 20px auto;
-  max-width: 300px;
+  max-width: 35em;
   min-height: 100%;
   flex: 1 0 auto;
 }
@@ -182,7 +178,7 @@ img {
   a {
     color: $black;
     &:hover, &:active {
-      text-decoration: none;
+      text-decoration: underline !important;
     }
   }
 }
