@@ -42,7 +42,6 @@ footer {
   margin: 3rem 1rem 0;
   padding: 1rem 0;
   border-top: 2px solid;
-  font-size: 14px;
   font-weight: $semibold;
 }
 
@@ -54,10 +53,6 @@ nav.main {
 nav.social {
   margin-bottom: 1.5em;
   font-weight: $light;
-  a { 
-    color: $black;
-    text-decoration: underline;
-  }
   > #gh { color: $gh-grey; }
   > #kb { color: $kb-orange; }
   > #tw { color: $tw-blue; }
