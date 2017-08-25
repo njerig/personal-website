@@ -44,6 +44,21 @@ footer {
   border-top: 2px solid;
   font-weight: $semibold;
 }
+@media (min-width: 425px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    nav.social {
+      margin: 0;
+    }
+
+    #cp {
+      padding: 0;
+    }
+  }
+}
 
 nav.main { 
   margin-top: 1em;
