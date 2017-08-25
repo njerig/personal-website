@@ -1,70 +1,8 @@
 ---
 ---
 
-/*-----COLOR-----*/
-
-$black: #000;
-$gh-grey: #828282;
-$bg: #fff;
-$kb-orange: #fd6f31;
-$tw-blue: #00aced;
-
-$default-blue: blue;
-
-
-
-/*-----FONT-----*/
-@font-face {
-  font-family: HKGrotesk-Light;
-        src: url('../font/HKGrotesk-Light.woff') format('woff'),
-             url('../font/HKGrotesk-Light.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: HKGrotesk-LightItalic;
-        src: url('../font/HKGrotesk-LightItalic.woff') format('woff'),
-             url('../font/HKGrotesk-LightItalic.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: HKGrotesk-Regular;
-        src: url('../font/HKGrotesk-Regular.woff') format('woff'),
-             url('../font/HKGrotesk-Regular.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: HKGrotesk-Semibold;
-        src: url('../font/HKGrotesk-Semibold.woff') format('woff'),
-             url('../font/HKGrotesk-Semibold.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: HKGrotesk-SemiboldItalic;
-        src: url('../font/HKGrotesk-SemiboldItalic.woff') format('woff'),
-             url('../font/HKGrotesk-SemiboldItalic.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: HKGrotesk-Bold;
-        src: url('../font/HKGrotesk-Bold.woff') format('woff'),
-             url('../font/HKGrotesk-Bold.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: HKGrotesk-BoldItalic;
-        src: url('../font/HKGrotesk-BoldItalic.woff') format('woff'),
-             url('../font/HKGrotesk-BoldItalic.woff2') format('woff2');
-}
-
-$font-backup: Helvetica, sans-serif;
-
-$hk-light: HKGrotesk-Light, $font-backup;
-$hk-light-em: HKGrotesk-LightItalic, $font-backup;
-$hk-regular: HKGrotesk-Regular, $font-backup;
-$hk-semibold: HKGrotesk-Semibold, $font-backup;
-$hk-semibold-em: HKGrotesk-SemiboldItalic, $font-backup;
-$hk-bold: HKGrotesk-Bold, $font-backup;
-$hk-bold-em: HKGrotesk-BoldItalic, $font-backup;
+@import "type.scss";
+@import "variables.scss";
 
 /*____________________________________________*/
 
@@ -74,8 +12,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: $hk-regular;
-  background-color: $bg;
+  font-weight: $regular;
+  background-color: $white;
 }
 
 header {
@@ -85,12 +23,12 @@ header {
 
 nav.main { 
   margin-top: 1em;
-  font-family: $hk-light;
+  font-weight: $light;
 }
 
 nav.social {
   margin-bottom: 1.5em;
-  font-family: $hk-light;
+  font-weight: $light;
   a { 
     color: $black;
     text-decoration: underline;
@@ -113,7 +51,7 @@ footer {
   padding: 20px;
   border-top: 2px solid;
   font-size: 14px;
-  font-family: $hk-semibold;
+  font-weight: $semibold;
 }
 
 h1,
@@ -122,12 +60,12 @@ h3 { margin: 40px 0; }
 
 p {
   > strong {
-    font-family: $hk-semibold;
+    font-weight: $semibold;
   }
 }
 
 a {
-  font-family: $hk-semibold;
+  font-weight: $semibold;
   color: $default-blue;
   text-decoration: none;
   cursor: auto;
@@ -172,7 +110,7 @@ img {
   color: $black;
 }
 .site-title {
-  font-family: $hk-bold;
+  font-weight: $bold;
   font-size: 48px;
   a {
     color: $black;
@@ -201,12 +139,6 @@ img {
       }
     }
   }
-}
-.box {
-  display: inline-block;
-  padding: 5px;
-  margin: 5px;
-  background-color: $bg;
 }
 
 /*************** index/archive/category pages *****************/

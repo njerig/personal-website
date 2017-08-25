@@ -3,7 +3,7 @@ main:
     url: "#"
 
   - title: colophon
-    url: "/colophon.html"
+    url: "#"
 
 social:
   - title: email
