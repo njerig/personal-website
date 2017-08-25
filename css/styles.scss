@@ -1,7 +1,6 @@
 ---
 ---
 
-@import "type.scss";
 @import "variables.scss";
 
 /*____________________________________________*/
@@ -12,6 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: $font-family;
   font-weight: $regular;
   background-color: $white;
 }
