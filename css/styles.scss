@@ -75,12 +75,13 @@ p {
 
 a {
   font-weight: $semibold;
-  color: $default-blue;
-  text-decoration: none;
+  color: $black;
+  text-decoration: underline;
+  text-decoration-color: $default-blue;
   cursor: auto;
 
   &:hover, &:active {
-    text-decoration: underline;
+    color: $default-blue;
   }
 }
 
@@ -112,14 +113,8 @@ img {
   color: $black;
 }
 .site-title {
-  font-weight: $bold;
+  font-weight: bold;
   font-size: 48px;
-  a {
-    color: $black;
-    &:hover, &:active {
-      text-decoration: underline !important;
-    }
-  }
 }
 
 .classification {
