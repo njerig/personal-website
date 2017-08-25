@@ -5,20 +5,45 @@
 
 /*____________________________________________*/
 
-html { height: 100%; }
+html { 
+  height: 100%;
+  font-size: 100%;
+}
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0 auto;
+  max-width: 35rem;
   font-family: $font-family;
   font-weight: $regular;
   background-color: $white;
 }
 
 header {
+  width: inherit;
+  margin-bottom: 3rem;
+  padding: 1rem 1rem 0;
   font-weight: bold;
-  margin-bottom: 3em;
+}
+
+main {
+  width:inherit;
+  flex: 1 0 auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-top: 2em;
+}
+
+footer {
+  margin: 3rem 1rem 0;
+  padding: 1rem 0;
+  border-top: 2px solid;
+  font-size: 14px;
+  font-weight: $semibold;
 }
 
 nav.main { 
@@ -36,22 +61,6 @@ nav.social {
   > #gh { color: $gh-grey; }
   > #kb { color: $kb-orange; }
   > #tw { color: $tw-blue; }
-}
-
-main {
-  flex: 1;
-}
-
-section {
-  margin-top: 2em;
-}
-
-footer {
-  margin: 0;
-  padding: 20px;
-  border-top: 2px solid;
-  font-size: 14px;
-  font-weight: $semibold;
 }
 
 h1,
@@ -85,13 +94,6 @@ img {
     width: 330px;
     height: auto;
   }
-}
-
-.not-footer {
-  margin: 20px auto;
-  max-width: 35em;
-  min-height: 100%;
-  flex: 1 0 auto;
 }
 
 @media (max-width: 330px) {
