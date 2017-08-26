@@ -6,9 +6,8 @@ $bold: 700;
 // import HK Grotesk
 @font-face {
   font-family: HKGrotesk;
-  src: url('../font/HKGrotesk-Light.eot') format ('eot'),
-       url('../font/HKGrotesk-Light.svg') format('svg'),
-       url('../font/HKGrotesk-Light.ttf') format('ttf'),
+  src: url('../font/HKGrotesk-Light.svg') format('svg'),
+       url('../font/HKGrotesk-Light.ttf') format('truetype'),
        url('../font/HKGrotesk-Light.woff') format('woff'),
        url('../font/HKGrotesk-Light.woff2') format('woff2');
   font-weight: $light;
@@ -17,9 +16,8 @@ $bold: 700;
 
 @font-face {
   font-family: HKGrotesk;
-  src: url('../font/HKGrotesk-LightItalic.eot') format ('eot'),
-       url('../font/HKGrotesk-LightItalic.svg') format('svg'),
-       url('../font/HKGrotesk-LightItalic.ttf') format('ttf'),
+  src: url('../font/HKGrotesk-LightItalic.svg') format('svg'),
+       url('../font/HKGrotesk-LightItalic.ttf') format('truetype'),
        url('../font/HKGrotesk-LightItalic.woff') format('woff'),
        url('../font/HKGrotesk-LightItalic.woff2') format('woff2');
   font-weight: $light;
@@ -28,9 +26,8 @@ $bold: 700;
 
 @font-face {
   font-family: HKGrotesk;
-  src: url('../font/HKGrotesk-Regular.eot') format ('eot'),
-       url('../font/HKGrotesk-Regular.svg') format('svg'),
-       url('../font/HKGrotesk-Regular.ttf') format('ttf'),
+  src: url('../font/HKGrotesk-Regular.svg') format('svg'),
+       url('../font/HKGrotesk-Regular.ttf') format('truetype'),
        url('../font/HKGrotesk-Regular.woff') format('woff'),
        url('../font/HKGrotesk-Regular.woff2') format('woff2');
   font-weight: normal;
@@ -39,9 +36,8 @@ $bold: 700;
 
 @font-face {
   font-family: HKGrotesk;
-  src: url('../font/HKGrotesk-Bold.eot') format ('eot'),
-       url('../font/HKGrotesk-Bold.svg') format('svg'),
-       url('../font/HKGrotesk-Bold.ttf') format('ttf'),
+  src: url('../font/HKGrotesk-Bold.svg') format('svg'),
+       url('../font/HKGrotesk-Bold.ttf') format('truetype'),
        url('../font/HKGrotesk-Bold.woff') format('woff'),
        url('../font/HKGrotesk-Bold.woff2') format('woff2');
   font-weight: $bold;
@@ -50,9 +46,8 @@ $bold: 700;
 
 @font-face {
   font-family: HKGrotesk;
-  src: url('../font/HKGrotesk-BoldItalic.eot') format ('eot'),
-       url('../font/HKGrotesk-BoldItalic.svg') format('svg'),
-       url('../font/HKGrotesk-BoldItalic.ttf') format('ttf'),
+  src: url('../font/HKGrotesk-BoldItalic.svg') format('svg'),
+       url('../font/HKGrotesk-BoldItalic.ttf') format('truetype'),
        url('../font/HKGrotesk-BoldItalic.woff') format('woff'),
        url('../font/HKGrotesk-BoldItalic.woff2') format('woff2');
   font-weight: $bold;
