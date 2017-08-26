@@ -1,55 +1,60 @@
 // weight name mapping
 $light: 300;
 $regular: 400;
-$semibold: 600;
 $bold: 700;
 
 // import HK Grotesk
 @font-face {
   font-family: HKGrotesk;
-  src: url('../font/HKGrotesk-Light.woff') format('woff'), url('../font/HKGrotesk-Light.woff2') format('woff2');
+  src: url('../font/HKGrotesk-Light.eot') format ('eot'),
+       url('../font/HKGrotesk-Light.svg') format('svg'),
+       url('../font/HKGrotesk-Light.ttf') format('ttf'),
+       url('../font/HKGrotesk-Light.woff') format('woff'),
+       url('../font/HKGrotesk-Light.woff2') format('woff2');
   font-weight: $light;
   font-style: normal;
 }
 
 @font-face {
   font-family: HKGrotesk;
-  src: url('../font/HKGrotesk-LightItalic.woff') format('woff'), url('../font/HKGrotesk-LightItalic.woff2') format('woff2');
+  src: url('../font/HKGrotesk-LightItalic.eot') format ('eot'),
+       url('../font/HKGrotesk-LightItalic.svg') format('svg'),
+       url('../font/HKGrotesk-LightItalic.ttf') format('ttf'),
+       url('../font/HKGrotesk-LightItalic.woff') format('woff'),
+       url('../font/HKGrotesk-LightItalic.woff2') format('woff2');
   font-weight: $light;
   font-style: italic;
 }
 
 @font-face {
   font-family: HKGrotesk;
-  src: url('../font/HKGrotesk-Regular.woff') format('woff'), url('../font/HKGrotesk-Regular.woff2') format('woff2');
+  src: url('../font/HKGrotesk-Regular.eot') format ('eot'),
+       url('../font/HKGrotesk-Regular.svg') format('svg'),
+       url('../font/HKGrotesk-Regular.ttf') format('ttf'),
+       url('../font/HKGrotesk-Regular.woff') format('woff'),
+       url('../font/HKGrotesk-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: HKGrotesk;
-  src: url('../font/HKGrotesk-Semibold.woff') format('woff'), url('../font/HKGrotesk-Semibold.woff2') format('woff2');
-  font-weight: $semibold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: HKGrotesk;
-  src: url('../font/HKGrotesk-SemiboldItalic.woff') format('woff'), url('../font/HKGrotesk-SemiboldItalic.woff2') format('woff2');
-  font-weight: $semibold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: HKGrotesk;
-  src: url('../font/HKGrotesk-Bold.woff') format('woff'), url('../font/HKGrotesk-Bold.woff2') format('woff2');
+  src: url('../font/HKGrotesk-Bold.eot') format ('eot'),
+       url('../font/HKGrotesk-Bold.svg') format('svg'),
+       url('../font/HKGrotesk-Bold.ttf') format('ttf'),
+       url('../font/HKGrotesk-Bold.woff') format('woff'),
+       url('../font/HKGrotesk-Bold.woff2') format('woff2');
   font-weight: $bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: HKGrotesk;
-  src: url('../font/HKGrotesk-BoldItalic.woff') format('woff'), url('../font/HKGrotesk-BoldItalic.woff2') format('woff2');
+  src: url('../font/HKGrotesk-BoldItalic.eot') format ('eot'),
+       url('../font/HKGrotesk-BoldItalic.svg') format('svg'),
+       url('../font/HKGrotesk-BoldItalic.ttf') format('ttf'),
+       url('../font/HKGrotesk-BoldItalic.woff') format('woff'),
+       url('../font/HKGrotesk-BoldItalic.woff2') format('woff2');
   font-weight: $bold;
   font-style: italic;
 }
