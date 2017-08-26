@@ -42,7 +42,7 @@ footer {
   margin: 3rem 1rem 0;
   padding: 1rem 0;
   border-top: 2px solid;
-  font-weight: $semibold;
+  font-weight: $light;
 }
 @media (min-width: 425px) {
   footer {
@@ -79,12 +79,12 @@ h3 { margin: 40px 0; }
 
 p {
   > strong {
-    font-weight: $semibold;
+    font-weight: $bold;
   }
 }
 
 a {
-  font-weight: $semibold;
+  font-weight: $bold;
   color: $black;
   text-decoration: underline;
   text-decoration-color: $default-blue;
