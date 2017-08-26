@@ -1,0 +1,14 @@
+<footer>
+  <nav class="social">
+    {% for item in site.data.nav.social %}
+      {% unless item.url contains "#" %}
+
+        <a href="{{ item.url }}">{{ item.title }}</a>
+
+        {% if forloop.last == false %} :: {% endif %}
+        
+      {% endunless %}
+    {% endfor %}
+  </nav>
+  <span id="cp">© njerig 2017</span>
+</footer>

@@ -1,0 +1,25 @@
+<header>
+  <span class="site-title">
+  <!--
+    <a href="{{ site.url }}">{{ site.display-title }}</a>
+  -->
+    {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+
+    <a href="/">njerig</a>
+    {% for crumb in crumbs offset: 1 %}
+      {% if forloop.last %}
+        / {{ crumb | replace:'-',' ' | remove:'.html' }}
+      {% else %}
+        / <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
+      {% endif %}
+    {% endfor %}
+  </span>
+  <nav class="main">
+    {% for item in site.data.nav.main %}
+      {% unless item.url contains "#" %}
+        <a href="{{ item.url }}">{{ item.title }}</a>
+        {% if forloop.last == false %} :: {% endif %}
+      {% endunless %}
+    {% endfor %}
+  </nav>
+</header>
