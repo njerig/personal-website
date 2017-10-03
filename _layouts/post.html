@@ -1,0 +1,39 @@
+---
+layout: blank
+---
+
+{% assign post = page %}
+
+{% assign category = site.my_categories | where: "slug", post.category %}
+{% assign category = category[0] %}
+{% if category %}
+    {% capture category_content %}<a class="label" href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
+{% endif %}
+      
+
+
+{% if post.tags.size > 0 %}
+  {% capture tags_content %}{% endcapture %}
+  {% for post_tag in post.tags %}
+    {% assign tag = site.my_tags | where: "slug", post_tag %}
+    {% if tag %}
+      {% assign tag = tag[0] %}
+      {% capture tags_content_temp %}{{ tags_content }}<a href="{{ tag.url }}">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+      {% assign tags_content = tags_content_temp %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+
+  <span class="post-title">
+    <h1>{{ page.title }}</h1>
+    {% if page.tagline %}
+      <small>{{page.tagline}}</small>
+    {% endif %}
+  </span>
+
+  <div class="classification">   
+    <info datetime>{{ page.date | date: "%b %d, %Y" }}</info>
+  </div>
+
+  <article>{{ content }}</article>

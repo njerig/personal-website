@@ -1,41 +1,50 @@
 ---
 ---
 
-@import "variables.scss";
+@import "utilities/_all";
+@import "base/_all";
+
+$new-gray: #666666;
 
 /*____________________________________________*/
 
-html { 
-  height: 100%;
-  font-size: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0 auto;
-  max-width: 35rem;
-  font-family: $font-family;
-  font-weight: $regular;
-  background-color: $white;
-}
 
 header {
   width: inherit;
-  margin-bottom: 3rem;
+}
+header#site-header {
   padding: 1rem 1rem 0;
+  margin-bottom: 1rem;
   font-weight: bold;
 }
 
+@media (min-width: 43.75em) {
+  header#site-header {
+    margin-bottom: 2rem;
+  }
+}
+
 main {
+  position: relative;
   width:inherit;
   flex: 1 0 auto;
   padding: 0 1rem;
 }
 
-section {
-  margin-top: 2em;
+main *[align="left"] {
+  margin: 0 1.5em 1em 0;
+}
+
+main *[align="right"] {
+  margin: 0 0 1em 1.5em;
+}
+
+article {
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 1em 0;
+  }
 }
 
 footer {
@@ -72,11 +81,8 @@ nav.social {
   > #tw { color: $tw-blue; }
 }
 
-h1,
-h2, 
-h3 { margin: 40px 0; }
-
 p {
+  margin-bottom: 1em;
   > strong {
     font-weight: $bold;
   }
@@ -98,13 +104,29 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-@media (min-width: 330px) {
-  img {
-    width: 330px;
-    height: auto;
-  }
+.my-face {
+  width: 300px;
+  height: auto;
 }
+
+info {
+  display: inline;
+  color: #dddddd;
+}
+
+.vertical-center {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-60%);
+}
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding-left: 1.25rem;
+  color: $new-gray;
+  font-size: 1rem;
+}
+
 
 @media (max-width: 330px) {
   .not-footer {
@@ -123,40 +145,29 @@ img {
 }
 .site-title {
   font-weight: bold;
-  font-size: 48px;
+  font-size: 2em;
 }
 
 .classification {
-  display: block;
-  font-weight: normal;
-  h4 { display: inline; }
-  ul {
-    display: inline;
-    padding: 0;
-
-    li {
-      display: inline;
-      list-style-type: none;
-      &:after {
-        content: "/ ";
-      }
-      &:last-child:after {
-        content: none;
-      }
-    }
-  }
+  margin-bottom: 1.5rem;
 }
 
 /*************** index/archive/category pages *****************/
+.slug-container {
+  margin-bottom: 1.5em;
+}
+
 
 .month-header {
   padding: 0 4px;
   font-size: 20px;
 }
 
-#post-title {
-  font-size: 25px;
-  line-height: 50px;
+.post-title {
+  margin-bottom: 1.5rem;
+  h1 {
+    margin: 0.5rem 0;
+  }
 }
 
 #teaser {

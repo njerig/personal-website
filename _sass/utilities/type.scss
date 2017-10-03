@@ -40,7 +40,7 @@ $bold: 700;
        url('../font/HKGrotesk-Bold.ttf') format('truetype'),
        url('../font/HKGrotesk-Bold.woff') format('woff'),
        url('../font/HKGrotesk-Bold.woff2') format('woff2');
-  font-weight: $bold;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -50,6 +50,6 @@ $bold: 700;
        url('../font/HKGrotesk-BoldItalic.ttf') format('truetype'),
        url('../font/HKGrotesk-BoldItalic.woff') format('woff'),
        url('../font/HKGrotesk-BoldItalic.woff2') format('woff2');
-  font-weight: $bold;
+  font-weight: bold;
   font-style: italic;
 }

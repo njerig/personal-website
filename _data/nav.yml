@@ -18,3 +18,24 @@ social:
   - title: twitter
     url: "https://twitter.com/njerigachoka"
 
+
+home:
+  - title: blog
+    url: "./blog"
+
+  - title: colophon
+    url: "#"
+
+blog:
+  - title: rss
+    url: "#"
+
+  - title: colophon
+    url: "#"
+
+colophon:
+  - title: home
+    url: "."
+
+  - title: blog
+    url: "./blog"
