@@ -2,11 +2,6 @@
 layout: blank
 ---
 <h1>Archive</h1>
-<h2>Archive</h2>
-<h3>Archive</h3>
-<h4>Archive</h4>
-<h5>Archive</h5>
-<h6>Archive</h6>
 {% for post in site.posts %}
   <p>{{ post.date | date: "%b %d, %Y"}} — <a href="{{ post.url }}">{{ post.title }}</a></p>
 {% endfor %}
