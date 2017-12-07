@@ -18,4 +18,4 @@ exclude: [Gemfile, Gemfile.lock, vendor]
 
 # site vars
 
-permalink: /blog/:title
+permalink: none
