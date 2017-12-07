@@ -1,7 +1,6 @@
 ---
 title: The Very Beginning
 date: 2017-10-02 22:10 -0400
-tag: meta
 excerpt: I'm finally done with some cohesive thing that is this website.
 ---
 
