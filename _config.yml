@@ -3,7 +3,8 @@
 title: "njerig.me"
 display-title: "njerig"
 description:
-url: "."
+url: "https://njerig.me"
+enforce_ssl: njerig.me
 
 
 # build
