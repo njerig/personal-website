@@ -20,3 +20,8 @@ exclude: [Gemfile, Gemfile.lock, vendor]
 # site vars
 
 permalink: none
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title
