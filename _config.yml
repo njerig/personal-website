@@ -22,6 +22,6 @@ exclude: [Gemfile, Gemfile.lock, vendor]
 permalink: none
 
 collections:
-  blog:
+  posts:
     output: true
     permalink: /blog/:title
