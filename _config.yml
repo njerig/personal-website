@@ -2,26 +2,34 @@
 
 title: "njerig.me"
 display-title: "njerig"
-description:
 url: "https://njerig.me"
 enforce_ssl: njerig.me
 
 
 # build
 
-markdown: kramdown
-kramdown:
-  syntax_highlighter_opts:
-    disable: true
-plugins: [jekyll-sitemap, jekyll-admin]
-exclude: [Gemfile, Gemfile.lock, vendor]
+plugins:
+  - jekyll-last-modified-at
+  - jekyll-sitemap
+exclude: 
+  - Gemfile
+  - Gemfile.lock
+  - vendor
 
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "tables", "space_after_headers", "footnotes", "underline"]
+
+excerpt_separator: <!--more-->
 
 # site vars
 
-permalink: none
+permalink: /:categories/:year/:month/:day/:title
 
-collections:
-  posts:
-    output: true
-    permalink: /blog/:title
+defaults:
+  -
+    scope:
+      path: "blog"
+      type: "posts"
+    values:
+      layout: "post"

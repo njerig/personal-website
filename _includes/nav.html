@@ -1,0 +1,14 @@
+<nav>
+    <header>
+        <a href="{{ site.url }}" style="font-size:2.5em; font-weight:bold;">njerig</a>
+    </header>
+    <div class="links">
+        {% for link in site.data.nav.main %}
+            {% assign class = nil %}
+            {% if page.url contains link.url %}
+                {% assign class = 'active' %}
+            {% endif %}
+        <a href="{{ link.url }}" class="{{ class }}">{{ link.title }}</a>
+        {% endfor %}
+    </div>
+</nav>

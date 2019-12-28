@@ -1,6 +1,15 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
-gem "html-proofer"
-gem "jekyll-sitemap", group: :jekyll_plugins
-gem "jekyll-admin", group: :jekyll_plugins
+gem "jekyll"
+gem "redcarpet"
+
+gem "bundler", "~> 2.0.2"
+
+group :jekyll_plugins do
+  gem "jekyll-last-modified-at"
+  gem "jekyll-sitemap"
+end
+
+group :test do
+  gem "html-proofer"
+end

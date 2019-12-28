@@ -5,27 +5,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-    {% assign random = site.time | date: "%s%N" %}
-    <link rel="icon" href="/favicon.ico?v={{ random }}" >
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.020/css/hack.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <!--<script src="https://use.fontawesome.com/54ad3a4620.js" async></script>
-      <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js" async></script>-->
-    <script type="text/javascript">
-      var host = "{{ site.enforce_ssl }}";
-      if ((host == window.location.host) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
-    </script>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="/assets/css/syntax-highlighting.css">
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
   </head>
   <body>
-    {% include header.html %}
-    <main>
+    {% include nav.html %}
+    <section>
       {{ content }}
-    </main>
-    {% include footer.html %}
+    </section>
   </body>
 </html>
