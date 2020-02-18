@@ -16,9 +16,11 @@ exclude:
   - Gemfile.lock
   - vendor
 
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "tables", "space_after_headers", "footnotes", "underline"]
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
 excerpt_separator: <!--more-->
 

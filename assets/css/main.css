@@ -6,74 +6,81 @@ Typography Properties (font-size, font-family, text-align, text-transform)
 Misc Properties (cursor, overflow, z-index)*/
 
 @font-face {
-    font-family: 'HK Grotesk';
-    font-weight: normal;
-    font-style: normal;
-    src: url('../../font/HKGrotesk-Regular.woff2') format('woff2'),
-         url('../../font/HKGrotesk-Regular.woff') format('woff');
+  font-family: 'HK Grotesk';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../../font/HKGrotesk-Regular.woff2') format('woff2'),
+       url('../../font/HKGrotesk-Regular.woff') format('woff');
 }
 @font-face {
-    font-family: 'HK Grotesk';
-    src: url('../../font/HKGrotesk-Italic.woff2') format('woff2'),
-         url('../../font/HKGrotesk-Italic.woff') format('woff');
-    font-weight: normal; font-style: italic;
+  font-family: 'HK Grotesk';
+  src: url('../../font/HKGrotesk-Italic.woff2') format('woff2'),
+       url('../../font/HKGrotesk-Italic.woff') format('woff');
+  font-weight: normal; font-style: italic;
 }
 @font-face {
-    font-family: 'HK Grotesk';
-    src: url('../../font/HKGrotesk-Bold.woff2') format('woff2'),
-         url('../../font/HKGrotesk-Bold.woff') format('woff');
-    font-weight: bold; font-style: normal;
+  font-family: 'HK Grotesk';
+  src: url('../../font/HKGrotesk-Bold.woff2') format('woff2'),
+       url('../../font/HKGrotesk-Bold.woff') format('woff');
+  font-weight: bold; font-style: normal;
 }
 @font-face {
-    font-family: 'HK Grotesk';
-    src: url('../../font/HKGrotesk-BoldItalic.woff2') format('woff2'),
-         url('../../font/HKGrotesk-BoldItalic.woff') format('woff');
-    font-weight: bold; font-style: italic;
+  font-family: 'HK Grotesk';
+  src: url('../../font/HKGrotesk-BoldItalic.woff2') format('woff2'),
+       url('../../font/HKGrotesk-BoldItalic.woff') format('woff');
+  font-weight: bold; font-style: italic;
+}
+
+@font-face {
+  font-family: 'Hack';
+  src: url('../../font/Hack-Regular.woff2') format('woff2'),
+       url('../../font/Hack-Regular.woff') format('woff');
+  font-weight: normal; font-style: normal;
 }
 
 html {
-    height: 100%;
-    background-color: #fff;
-    font-family: 'HK Grotesk', sans-serif;
-    font-size: 16px;
-    text-rendering: optimizeLegibility;
+  height: 100%;
+  background-color: #fff;
+  font-family: 'HK Grotesk', sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
 }
 
 body {
-    max-width: 35rem;
-    min-height: 100%;
-    margin: 1rem auto 1.5rem;
+  max-width: 35rem;
+  min-height: 100%;
+  margin: 1rem auto 1.5rem;
 }
 
 body > article, 
 body > section {
-    padding: 0 1rem;
-    font-size: 1em;
-    line-height: 1.25;
+  padding: 0 1rem;
+  font-size: 1em;
+  line-height: 1.25;
 }
 
 @media (min-width: 43.75em) {
   body > article, 
   body > section {
-    font-size: 1em;
-    /* equivalent to 16px */
-    line-height: 1.375;
-    /* equivalent to 22px */
+  font-size: 1em;
+  /* equivalent to 16px */
+  line-height: 1.375;
+  /* equivalent to 22px */
   }
 }
 
 a {
-    color: black;
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-color: blue;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: blue;
 }
 
 a:hover { color: blue }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 nav {
@@ -226,18 +233,16 @@ h4 {
 }
 
 blockquote {
-  font-size: 1.25em;
-  /* 20px / 16px */
-  line-height: 1.25;
-  /* 25px / 20px */
+  padding: 20px 30px;
+  margin: 0;
+  background-color: #d3d3d3;
 }
+
+blockquote > p { margin:0; }
 
 @media (min-width: 43.75em) {
   blockquote {
-    font-size: 1.5em;
-    /* 24px / 16px = */
-    line-height: 1.45833333;
-    /* 35px / 24px */
+
   }
 }
 
@@ -251,10 +256,62 @@ h6 {
   font-weight: bold;
 }
 
+/* CODE */
+/* all code */
+pre,
 code {
-    font-family: Consolas, monospace;
-    font-size: 0.8rem;
+  font-family: 'Hack', monospace;
+  font-size: 0.8rem;
+  font-kerning: none;
+
+  background-color: #d8d8ff;
 }
+/* inline code, no highlight*/
+code {
+  padding: 0.2rem 0.3rem;
+  border-radius: 3px;
+
+  white-space: nowrap;
+}
+/* inline code, highlight */
+code.highlight {
+  border-radius: 3px;
+
+  background: #002451;
+  color: #fff;
+}
+/* block code, no highlight */
+pre {
+  border-radius: 5px;
+  padding: 8px 12px;
+  overflow-x: auto;
+}
+/* block code, highlight */
+figure.highlight pre code {
+  background-color: #002451;
+  color: #fff;
+  display: block;
+  line-height: 1.5;
+  
+  counter-reset: code;
+}
+figure.highlight pre code div {
+  counter-increment: code;
+}
+figure.highlight pre code div::before{
+  content: counter(code);
+
+  /*hacky*/
+  width: 1rem;
+  text-align: right;
+
+  /*border*/
+  display: inline-block;
+  padding-right: 0.25em;
+  margin-right: 0.25em;
+  border-right: 1px solid gray;
+}
+
 
 .gallery {
   display: flex;
