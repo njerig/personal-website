@@ -3,7 +3,9 @@ source "https://rubygems.org"
 gem "jekyll"
 gem "pygments.rb"
 
-gem "bundler", "~> 2.0.2"
+gem "bundler"
+
+gem 'http_parser.rb', git: "git@github.com:tmm1/http_parser.rb.git"
 
 group :jekyll_plugins do
   gem "jekyll-last-modified-at"
