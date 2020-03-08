@@ -3,19 +3,21 @@ layout: blank
 ---
 
 {% assign post = page %}
-
 <article>
-
     <h1 style="">{{ post.title }}</h1>
     {% if post.subtitle %}
-    <p style="margin:0 0 0.5rem;font-style:italic;">{{post.subtitle}}</p>
+    <p id="post-subtitle">{{post.subtitle}}</p>
     {% endif %}
 
     {% assign post_date =  post.date | date: "%b %d, %Y" %}
     {% assign modified_date = post.last_modified_at | date: "%b %d, %Y" %}
 
-    <p style="color:gray;margin:0 0 1.25rem;">created: <i>{{ post.date | date: "%d %b %Y" }}</i>{% if post_date != modified_date %}; modified: <i>{{ post.last_modified_at | date: "%d %b %Y" }}</i></p>{% endif %}
-
+    <p id="post-date">created: <time>{{ post.date | date: "%d %b %Y" }}</time>{% if post_date != modified_date %}; modified: <time>{{ post.last_modified_at | date: "%d %b %Y" }}</time></p>{% endif %}
+<!-- 
+    <div style="border:2px dotted black;">
+        {% include toc.html html=content ordered=true sanitize=true h_min=2 %}
+    </div>
+-->
     {{ content }}
   
     <img src="/assets/img/favicon.png" alt="the end" style="max-width:30px;margin-top:1rem;display: block;">

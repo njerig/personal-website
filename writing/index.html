@@ -1,0 +1,20 @@
+---
+layout: blank
+permalink: /writing/
+title: writing
+---
+
+{% assign posts = site.categories.writing %}
+
+{% if posts %}
+<table style="width: 100%;">
+    {% for post in site.categories.writing %}
+    <tr>
+        <td><a href="{{ post.url }}">{{ post.title }}</a></td>
+        <td style="text-align: right">{{ post.date | date: "%Y-%m-%d" }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>...
+{% endif %}

@@ -62,7 +62,7 @@ body > section {
 @media (min-width: 43.75em) {
   body > article, 
   body > section {
-  font-size: 1em;
+  font-size: 1.12em;
   /* equivalent to 16px */
   line-height: 1.375;
   /* equivalent to 22px */
@@ -88,7 +88,11 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   padding:0 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 43.75em) {
+  nav { margin-bottom: 3rem; }
 }
 
 header { 
@@ -195,14 +199,6 @@ h3 {
   }
 }
 
-@media (min-width: 56.25em) {
-  body {
-    font-size: 1.125em;
-    /* 1.125x body copy size = 18px */
-    line-height: 1.11111111;
-  }
-}
-
 blockquote {
   padding: 20px 30px;
   margin: 0;
@@ -284,7 +280,9 @@ figure.highlight pre code div::before{
   border-right: 1px solid gray;
 }
 
+/* PATH SPECIIC CSS */
 
+/* projects */
 .gallery {
   display: flex;
   flex-flow: row wrap;
@@ -298,4 +296,19 @@ figure.highlight pre code div::before{
 }
 .gallery-item h3 {
   margin-top:0;
+}
+
+/* writing */
+#post-subtitle {
+  margin: 0 0 0.5rem;
+  font-style: italic;
+}
+
+#post-date {
+  margin: 0 0 1.25rem;
+  color: gray;
+}
+
+#post-date time {
+  font-style: italic;
 }

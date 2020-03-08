@@ -31,7 +31,7 @@ permalink: /:categories/:year/:month/:day/:title
 defaults:
   -
     scope:
-      path: "blog"
+      path: "writing"
       type: "posts"
     values:
       layout: "post"
