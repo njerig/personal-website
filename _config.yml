@@ -10,6 +10,7 @@ enforce_ssl: njerig.me
 
 plugins:
   - jekyll-last-modified-at
+  - jekyll-seo-tag
   - jekyll-sitemap
 exclude: 
   - Gemfile
