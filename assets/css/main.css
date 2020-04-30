@@ -5,6 +5,7 @@ Visual Properties (color, background, border, box-shadow)
 Typography Properties (font-size, font-family, text-align, text-transform)
 Misc Properties (cursor, overflow, z-index)*/
 
+/* Font Import */
 @font-face {
   font-family: 'HK Grotesk';
   font-weight: normal;
@@ -20,14 +21,14 @@ Misc Properties (cursor, overflow, z-index)*/
 }
 @font-face {
   font-family: 'HK Grotesk';
-  src: url('../../font/HKGrotesk-SemiBold.woff2') format('woff2'),
-       url('../../font/HKGrotesk-SemiBold.woff') format('woff');
+  src: url('../../font/HKGrotesk-Bold.woff2') format('woff2'),
+       url('../../font/HKGrotesk-Bold.woff') format('woff');
   font-weight: bold; font-style: normal;
 }
 @font-face {
   font-family: 'HK Grotesk';
-  src: url('../../font/HKGrotesk-SemiBoldItalic.woff2') format('woff2'),
-       url('../../font/HKGrotesk-SemiBoldItalic.woff') format('woff');
+  src: url('../../font/HKGrotesk-BoldItalic.woff2') format('woff2'),
+       url('../../font/HKGrotesk-BoldItalic.woff') format('woff');
   font-weight: bold; font-style: italic;
 }
 
@@ -38,11 +39,14 @@ Misc Properties (cursor, overflow, z-index)*/
   font-weight: normal; font-style: normal;
 }
 
+/* ===== MAIN STYLES ===== */
+
+/* --- up to 699px --- */
 html {
   height: 100%;
   background-color: #fff;
-  font-family: 'HK Grotesk', sans-serif;
   font-size: 16px;
+  font-family: 'HK Grotesk', sans-serif;
   text-rendering: optimizeLegibility;
 }
 
@@ -53,30 +57,22 @@ body {
 }
 
 body > article, 
-body > section {
+body > section,
+body > main {
   padding: 0 1rem;
   font-size: 1em;
   line-height: 1.25;
 }
 
-@media (min-width: 43.75em) {
-  body > article, 
-  body > section {
-  font-size: 1.12em;
-  /* equivalent to 16px */
-  line-height: 1.375;
-  /* equivalent to 22px */
-  }
-}
-
 a {
-  color: black;
-  font-weight: bold;
-  text-decoration: underline;
-  text-decoration-color: blue;
+  color: blue;
+  text-decoration: none;
 }
 
-a:hover { color: blue }
+a:hover { 
+  color: blue;
+  text-decoration: underline;
+}
 
 img {
   max-width: 100%;
@@ -85,42 +81,42 @@ img {
 
 nav {
   display: flex;
+  margin-bottom: 2.5rem;
+  padding:0 1rem;
   flex-direction: row;
   justify-content: space-between;
-  padding:0 1rem;
-  margin-bottom: 2.5rem;
+  align-items: center;
 }
 
-@media (min-width: 43.75em) {
-  nav { margin-bottom: 3rem; }
+nav .nav-left { line-height: 1.3;}
+
+.nav-left header {
+  display:inline;
 }
 
-header { 
-  align-self: flex-start;
-  line-height: 1.1;
-}
+.nav-left header a { text-decoration: underline; }
 
-nav > div.links {
+nav .nav-right {
   display: flex;
   flex-flow: row wrap;
   flex-grow: 1;
   justify-content: flex-end;
+  align-content: space-between;
 }
 
-div.links > a {
+.nav-right > a {
   border: 3px solid blue;
-  border-radius: 5px;
   flex: 0 1;
   margin-left: 0.5rem;
-  font-size: 1.1rem;
+  padding: .25em .3em;
   font-weight: normal;
-  padding: .25rem;
+  font-size: 0.8em;
   text-align: center;
   text-decoration: none;
-  max-height: 100%;
+  text-transform: uppercase;
 }
 
-div.links > a:first-child {
+.nav-right > a:first-child {
   margin: 0;
 }
 
@@ -129,27 +125,13 @@ div.links > a:first-child {
   color: white;
 }
 
-.active:hover {}
+.active:hover {
+  color: white;
+}
 
 div.links > a:hover {
   background-color: blue;
   color: white;
-}
-
-@media (min-width: 43.75em){
-  nav {
-    display: block;
-  }
-
-  nav > div.links {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 0.75rem;
-  }
-
-  div.links > a { 
-    margin-right: 1rem;
-  }
 }
 
 h1 {
@@ -159,29 +141,12 @@ h1 {
   /* 45px / 36px */
 }
 
-@media (min-width: 56.25em) {
-  h1 {
-    font-size: 2.5em;
-    /* 2.5x body copy size = 40px */
-    line-height: 1.125;
-    /* keep to a multiple of the 20px line height 
-    and something more appropriate for display headings */
-  }
-}
 
 h2 {
   font-size: 1.625em;
   /* 1.625x body copy size = 26px */
   line-height: 1.15384615;
   /* 30px / 26px */
-}
-
-@media (min-width: 56.25em) {
-  h2 {
-    font-size: 2em;
-    /* 2x body copy size = 32px */
-    line-height: 1.25;
-  }
 }
 
 h3 {
@@ -191,27 +156,13 @@ h3 {
   /* 25px / 22px */
 }
 
-@media (min-width: 56.25em) {
-  h3 {
-    font-size: 1.5em;
-    /* 1.5x body copy size = 24px */
-    line-height: 1.25;
-  }
-}
-
 blockquote {
-  padding: 20px 30px;
   margin: 0;
+  padding: 20px 30px;
   background-color: #d3d3d3;
 }
 
 blockquote > p { margin:0; }
-
-@media (min-width: 43.75em) {
-  blockquote {
-
-  }
-}
 
 h1, 
 h2, 
@@ -221,6 +172,26 @@ h5,
 h6 {
   margin: 1rem 0 0.75rem;
   font-weight: bold;
+}
+
+.heading-anchor {
+  display:none;
+  margin-left: -.8em;
+  text-decoration: none;
+}
+
+h1:hover > a.heading-anchor,
+h2:hover > a.heading-anchor,
+h3:hover > a.heading-anchor,
+h4:hover > a.heading-anchor,
+h5:hover > a.heading-anchor,
+h6:hover > a.heading-anchor {
+  display: inline;
+  color: #d8d8ff;
+}
+
+a.heading-anchor:hover {
+  color:blue;
 }
 
 /* CODE */
@@ -255,9 +226,9 @@ pre {
 }
 /* block code, highlight */
 figure.highlight pre code {
+  display: block;
   background-color: #002451;
   color: #fff;
-  display: block;
   line-height: 1.5;
   
   counter-reset: code;
@@ -275,9 +246,41 @@ figure.highlight pre code div::before{
 
   /*border*/
   display: inline-block;
-  padding-right: 0.25em;
   margin-right: 0.25em;
+  padding-right: 0.25em;
   border-right: 1px solid gray;
+}
+
+kbd {
+  display: inline-block;
+  margin: 0px 0.1em;
+  padding: 0.1em 0.6em;
+  border-radius: 3px;
+  border: 1px solid rgb(204, 204, 204);
+  color: rgb(51, 51, 51);
+  line-height: 1.4;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  box-shadow: 0px 1px 0px rgba(0,0,0,0.2), inset 0px 0px 0px 2px #ffffff;
+  background-color: rgb(247, 247, 247);
+  -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+  -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #ffffff inset;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  text-shadow: 0 1px 0 #fff;
+}
+
+del { color: red; }
+
+ins { color: green; }
+
+/* tables */
+table {
+  border-collapse: collapse
+}
+
+caption {
+  text-transform: uppercase;
 }
 
 /* PATH SPECIIC CSS */
@@ -299,16 +302,72 @@ figure.highlight pre code div::before{
 }
 
 /* writing */
+article header { margin-bottom: 1.5rem; }
+
+article header h1 { margin-bottom: 0.5rem; }
+
+article header p { color: gray; }
+
 #post-subtitle {
-  margin: 0 0 0.5rem;
-  font-style: italic;
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 #post-date {
   margin: 0 0 1.25rem;
-  color: gray;
 }
 
 #post-date time {
   font-style: italic;
+}
+
+#post-datetime {
+  margin: 0 0 0 7px;
+  font-size: 0.9rem;
+  vertical-align: middle;
+  float: right;
+}
+
+.footnotes::before {
+  display: block;
+  content: "Footnotes:";
+  border-top: 1px solid gray;
+  padding-top: .75rem;
+}
+
+.footnotes { margin-bottom: 1rem; }
+
+/* --- at least 43.75rem = 700px --- */
+@media (min-width: 43.75em) {
+  body > article, 
+  body > section {
+    font-size: 1.12em;
+    /* equivalent to 16px */
+    line-height: 1.375;
+    /* equivalent to 22px */
+  }
+  nav { margin-bottom: 3rem; }
+}
+
+/* --- at least 56.25 = 900px --- */
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 2.5em;
+    /* 2.5x body copy size = 40px */
+    line-height: 1.125;
+    /* keep to a multiple of the 20px line height 
+    and something more appropriate for display headings */
+  }
+
+  h2 {
+    font-size: 2em;
+    /* 2x body copy size = 32px */
+    line-height: 1.25;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    /* 1.5x body copy size = 24px */
+    line-height: 1.25;
+  }
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
+    <title>{% if page.title %} {{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <link rel="stylesheet" type="text/css" href="/assets/css/syntax-highlighting.css">
     <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    {% seo %}
   </head>
   <body>
     {% include nav.html %}

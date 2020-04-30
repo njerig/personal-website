@@ -1,8 +1,10 @@
 <nav>
-    <header>
-        <a href="{{ site.url }}" style="font-size:2.5em; font-weight:bold;">njerig</a>
-    </header>
-    <div class="links">
+    <span class="nav-left">
+        <header>
+            <a href="{{ site.url }}" style="font-size:1.5em; font-weight:bold; color:black; text-decoration-color:blue;">njerig</a>
+        </header>
+    </span>
+    <span class="nav-right">
         {% for link in site.data.nav.main %}
             {% assign class = nil %}
             {% if page.url contains link.url %}
@@ -10,5 +12,5 @@
             {% endif %}
         <a href="{{ link.url }}" class="{{ class }}">{{ link.title }}</a>
         {% endfor %}
-    </div>
+    </span>
 </nav>
