@@ -27,12 +27,12 @@ excerpt_separator: <!--more-->
 
 # site vars
 
-permalink: /:categories/:year/:month/:day/:title
+permalink: /:categories/:title
 
 defaults:
   -
     scope:
-      path: "writing"
+      path: ""
       type: "posts"
     values:
       layout: "post"

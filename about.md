@@ -1,5 +1,6 @@
 ---
-layout: homepage
+title: About
+layout: about
 ---
 Hi, I'm Njeri Gachoka. I study computer science and physics at [MIT](//mit.edu).
 
