@@ -10,8 +10,10 @@ enforce_ssl: njerig.me
 
 plugins:
   - jekyll-last-modified-at
-  - jekyll-seo-tag
-  - jekyll-sitemap
+
+include:
+  - _redirects
+
 exclude: 
   - Gemfile
   - Gemfile.lock
@@ -36,3 +38,8 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+
+# netlify redirects
+netlify:
+  redirects:
+    - /roam-theme https://admiring-sinoussi-6079e5.netlify.app
