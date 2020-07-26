@@ -1,43 +1,4 @@
-/* import */
-/*Layout Properties (position, float, clear, display)
-Box Model Properties (width, height, margin, padding)
-Visual Properties (color, background, border, box-shadow)
-Typography Properties (font-size, font-family, text-align, text-transform)
-Misc Properties (cursor, overflow, z-index)*/
-
-/* Font Import */
-@font-face {
-  font-family: 'HK Grotesk';
-  font-weight: normal;
-  font-style: normal;
-  src: url('../../font/HKGrotesk-Regular.woff2') format('woff2'),
-       url('../../font/HKGrotesk-Regular.woff') format('woff');
-}
-@font-face {
-  font-family: 'HK Grotesk';
-  src: url('../../font/HKGrotesk-Italic.woff2') format('woff2'),
-       url('../../font/HKGrotesk-Italic.woff') format('woff');
-  font-weight: normal; font-style: italic;
-}
-@font-face {
-  font-family: 'HK Grotesk';
-  src: url('../../font/HKGrotesk-Bold.woff2') format('woff2'),
-       url('../../font/HKGrotesk-Bold.woff') format('woff');
-  font-weight: bold; font-style: normal;
-}
-@font-face {
-  font-family: 'HK Grotesk';
-  src: url('../../font/HKGrotesk-BoldItalic.woff2') format('woff2'),
-       url('../../font/HKGrotesk-BoldItalic.woff') format('woff');
-  font-weight: bold; font-style: italic;
-}
-
-@font-face {
-  font-family: 'Hack';
-  src: url('../../font/Hack-Regular.woff2') format('woff2'),
-       url('../../font/Hack-Regular.woff') format('woff');
-  font-weight: normal; font-style: normal;
-}
+@import url("fonts.css");
 
 /* ===== MAIN STYLES ===== */
 
