@@ -2,7 +2,9 @@
 title: About
 layout: about
 ---
-Hi, I'm Njeri Gachoka. I study computer science and physics at [MIT](//mit.edu).
+Hi, I'm Njeri Gachoka. I'm a 21-year-old budding computer scientist-engineer interested in research about and prototyping of new computing systems. I especially enjoy working on browsers, operating systems, and AR/VR.
+
+I previously studied computer science at MIT.
 
 
 Here's where you can find me **elsewhere on the web**.  
