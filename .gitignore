@@ -1,9 +1,10 @@
+# Jekyll-specific
 _site/
 .sass_cache/
 .jekyll_cache/
 .jekyll-metadata
-
 .bundle/
 vendor/
 
-.venv
+# macOS-specific
+.DS_Store
