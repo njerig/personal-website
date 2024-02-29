@@ -24,7 +24,7 @@ layout: blank
     </header>
 
     {% unless post.toc == false %}
-        <div id="toc" style="border:2px dotted black;">
+        <div id="toc">
             <h4 style="font-size: 1.5rem; margin: 1rem 0 0 1rem; font-weight: normal;">Table of Contents</h4>
             {% include toc.html html=content sanitize=true h_min=1 h_max=3 %}
         </div>
@@ -33,5 +33,6 @@ layout: blank
     {% include anchor_headings.html html=content beforeHeading=true h_max=3 anchorBody="§" anchorClass="heading-anchor"%}
     
     <img id="endmarker" src="/assets/img/favicon.png" alt="the end" style="max-width:30px;float:right;">
+    
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </article>
