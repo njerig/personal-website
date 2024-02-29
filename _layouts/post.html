@@ -13,7 +13,14 @@ layout: blank
         {% assign post_date =  post.date | date: "%b %d, %Y" %}
         {% assign modified_date = post.last_modified_at | date: "%b %d, %Y" %}
 
-        <!-- <p id="post-date">created: <time>{{ post.date | date: "%d %b %Y" }}</time>{% if post_date != modified_date %}; modified: <time>{{ post.last_modified_at | date: "%d %b %Y" }}</time></p>{% endif %} -->
+        <span id="post-datetime">
+            created: 
+            <time>{{ post.date | date: "%b %d, %Y" }}</time>
+            {% if post_date != modified_date %}
+                | modified: 
+                <time>{{ post.last_modified_at | date: "%b %d, %Y" }}</time>
+            {% endif %}
+        <span></span>
     </header>
 <!-- 
     <div style="border:2px dotted black;">
@@ -23,6 +30,6 @@ layout: blank
     {% include anchor_headings.html html=content beforeHeading=true h_max=4 anchorBody="§" anchorClass="heading-anchor"%}
     
     <div style="margin-top: 2rem;">
-        <!-- <img src="/assets/img/favicon.png" alt="the end" style="max-width:30px;display:inline;vertical-align: middle;float:right;"> --><span id="post-datetime">created: <time>{{ post.date | date: "%d %b %Y" }}</time>{% if post_date != modified_date %}; modified: <time>{{ post.last_modified_at | date: "%d %b %Y" }}</time></span>{% endif %}
+        <!-- <img src="/assets/img/favicon.png" alt="the end" style="max-width:30px;display:inline;vertical-align: middle;float:right;"> -->
     </div>
 </article>
