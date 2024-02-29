@@ -263,6 +263,18 @@ caption {
 }
 
 /* writing */
+#post-list {
+  width: 100%;
+}
+
+#post-list tr td {
+  vertical-align: top;
+}
+
+#post-list tr td:first-child {
+  width: 6em;
+}
+
 article header { margin-bottom: 1.5rem; }
 
 article header h1 { margin-bottom: 0.5rem; }
@@ -274,17 +286,17 @@ article header p { color: gray; }
   font-size: 1.5rem;
 }
 
-#post-date {
-  margin: 0 0 1.25rem;
-}
-
-#post-date time {
-  font-style: italic;
-}
-
 #post-datetime {
   font-size: 0.9rem;
   vertical-align: middle;
+}
+
+#toc {
+  border: 2px dotted black;
+}
+
+#toc ul {
+  margin-right: 1rem;
 }
 
 .footnotes::before {
