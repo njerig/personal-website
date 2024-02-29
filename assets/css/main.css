@@ -14,7 +14,7 @@ html {
 body {
   max-width: 35rem;
   min-height: 100%;
-  margin: 1rem auto 2rem;
+  margin: 1rem auto;
 }
 
 body > article, 
@@ -295,6 +295,10 @@ article header p { color: gray; }
 }
 
 .footnotes { margin-bottom: 1rem; }
+
+#endmarker {
+  margin: 1rem 0;
+}
 
 /* --- at least 43.75rem = 700px --- */
 @media (min-width: 43.75em) {
