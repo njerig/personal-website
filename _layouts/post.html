@@ -5,7 +5,7 @@ layout: blank
 {% assign post = page %}
 <article>
     <header>
-        <h1 style="">{{ post.title }}</h1>
+        <h1>{{ post.title }}</h1>
         {% if post.subtitle %}
         <p id="post-subtitle">{{post.subtitle}}</p>
         {% endif %}
@@ -22,12 +22,15 @@ layout: blank
             {% endif %}
         <span></span>
     </header>
-<!-- 
-    <div style="border:2px dotted black;">
-        {% include toc.html html=content ordered=true sanitize=true h_min=2 %}
-    </div>
--->
-    {% include anchor_headings.html html=content beforeHeading=true h_max=4 anchorBody="§" anchorClass="heading-anchor"%}
+
+    {% unless post.toc == false %}
+        <div style="border:2px dotted black;">
+            <h4 style="font-size: 1.5rem; margin: 1rem 0 0 1rem; font-weight: normal;">Table of Contents</h4>
+            {% include toc.html html=content sanitize=true h_min=1 h_max=3 %}
+        </div>
+    {% endunless %}
+
+    {% include anchor_headings.html html=content beforeHeading=true h_max=3 anchorBody="§" anchorClass="heading-anchor"%}
     
     <div style="margin-top: 2rem;">
         <!-- <img src="/assets/img/favicon.png" alt="the end" style="max-width:30px;display:inline;vertical-align: middle;float:right;"> -->
