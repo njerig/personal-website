@@ -77,6 +77,11 @@ nav .nav-right {
   text-transform: uppercase;
 }
 
+.nav-right > a:hover {
+  background-color: blue;
+  color: white;
+}
+
 .nav-right > a:first-child {
   margin: 0;
 }
