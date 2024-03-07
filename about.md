@@ -11,7 +11,7 @@ Hi, I'm Njeri Gachoka. I'm a budding computer scientist and engineer interested 
 
 
 Here's where you can find me **elsewhere on the web**.  
-Twitter: [@njerig_](//twitter.com/njerig_)  
 Email: njeri [at] gachoka [dot] org  
+Twitter: [@njerig_](//twitter.com/njerig_)  
 GitHub: [njerig](//github.com/njerig)  
 Keybase: [njerig](//keybase.io/njerig)
