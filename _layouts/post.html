@@ -7,20 +7,30 @@ layout: blank
     <header>
         <h1>{{ post.title }}</h1>
         {% if post.subtitle %}
-        <p id="post-subtitle">{{post.subtitle}}</p>
+        <h2 id="post-subtitle">{{post.subtitle}}</h2>
         {% endif %}
 
         {% assign post_date =  post.date | date: "%b %d, %Y" %}
         {% assign modified_date = post.last_modified_at | date: "%b %d, %Y" %}
 
-        <span id="post-datetime">
-            created: 
-            <time>{{ post.date | date: "%b %d, %Y" }}</time>
-            {% if post_date != modified_date %}
-                | last modified: 
-                <time>{{ post.last_modified_at | date: "%b %d, %Y" }}</time>
+        <div id="post-info">
+            <div id="post-datetime">
+                created: 
+                <time>{{ post_date }}</time>
+                {% if post_date != modified_date %}
+                    | last modified: 
+                    <time>{{ modified_date }}</time>
+                {% endif %}
+            </div>
+            {% if post.tags %}
+                <div class="tags">
+                    tagged: 
+                    {% for tag in post.tags %}
+                        <a class="tag" href="/tagged/{{ tag | slugify }}/">#{{ tag }}</a>
+                    {% endfor %}
+                </div>
             {% endif %}
-        <span></span>
+        </div>
     </header>
 
     {% unless post.toc == false %}

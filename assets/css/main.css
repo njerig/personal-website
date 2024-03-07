@@ -279,16 +279,27 @@ article header { margin-bottom: 1.5rem; }
 
 article header h1 { margin-bottom: 0.5rem; }
 
-article header p { color: gray; }
 
 #post-subtitle {
   margin: 0;
   font-size: 1.5rem;
 }
 
-#post-datetime {
+#post-info {
+  margin-top: 1rem;
   font-size: 0.9rem;
+}
+
+#post-datetime {
   vertical-align: middle;
+}
+
+.tag {
+  color: gray;
+}
+.tag:hover {
+  color: gray;
+  text-decoration: underline;
 }
 
 #toc {
