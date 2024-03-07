@@ -38,8 +38,3 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-
-# netlify redirects
-netlify:
-  redirects:
-    - /roam-theme https://admiring-sinoussi-6079e5.netlify.app
