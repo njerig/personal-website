@@ -17,7 +17,7 @@ layout: blank
             created: 
             <time>{{ post.date | date: "%b %d, %Y" }}</time>
             {% if post_date != modified_date %}
-                | modified: 
+                | last modified: 
                 <time>{{ post.last_modified_at | date: "%b %d, %Y" }}</time>
             {% endif %}
         <span></span>
