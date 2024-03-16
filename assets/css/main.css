@@ -14,7 +14,8 @@ html {
 body {
   max-width: 35rem;
   min-height: 100%;
-  margin: 1rem auto;
+  margin: 0 auto;
+  padding: 1rem 0;
 }
 
 body > article, 
@@ -254,17 +255,28 @@ caption {
 /* projects */
 .gallery {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-content: space-between;
+  overflow-x: scroll;
 }
 
 .gallery-item {
-  background-color: red;
+  flex: 0 0 40%;
+  border: 1px solid rgb(190, 190, 190);
   margin: 0.5rem;
   padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 .gallery-item h3 {
-  margin-top:0;
+  margin: 0;
+}
+
+.gallery-item .date {
+  font-size: 0.8rem;
+}
+
+.gallery-item img {
+  max-height: 150px;
 }
 
 /* writing */

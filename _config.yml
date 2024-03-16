@@ -38,3 +38,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+
+collections:
+  projects:
+    output: true

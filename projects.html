@@ -1,0 +1,29 @@
+---
+layout: blank
+title: Projects
+---
+
+{% assign project_tags = site.projects | map: 'tag' | uniq %}
+{% for tag in project_tags %}
+    <h2>{{ tag }}</h2>
+    <div class="gallery">
+        {% assign projects_with_date = site.projects | where_exp: "item", "item.start_date != nil" | sort: 'start_date' | reverse %}
+        {% assign projects_without_date = site.projects | where_exp: "item", "item.start_date == nil" %}
+        {% assign sorted_projects = projects_without_date | concat: projects_with_date %}
+        {% for project in sorted_projects %}
+            {% if project.tag == tag %}
+                <div class="gallery-item">
+                    {% if project.image %}
+                        <img src="{{ project.image }}" alt="{{ project.title }}">
+                    {% endif %}
+                    <h3><!--<a href="{{ project.url }}">-->{{ project.title }}<!--</a>--></h3>
+                    {% if project.start_date %}
+                        <span class="date">{{ project.start_date }} - {{ project.end_date }}</span>
+                    {% endif %}
+                    <p>{{ project.description }}</p>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,36 @@
+---
+layout: blank
+---
+
+{% assign project = page %}
+<article>
+    <header>
+        <h1>{{ project.title }}</h1>
+        {% if project.subtitle %}
+        <h2 id="post-subtitle">{{project.subtitle}}</h2>
+        {% endif %}
+
+        {% assign project_start_date =  project.start_date | date: "%b %Y" %}
+        {% if project.end_date %}
+            {% assign project_end_date =  project.end_date | date: "%b %Y" %}
+        {% else %}
+            {% assign project_end_date = "present" %}
+        {% endif %}
+
+        {% if project_start_date %}
+            <div id="post-info">
+                <div id="post-datetime">
+                    <time>{{ project_start_date }} – {{ project_end_date }}</time>
+                </div>
+            </div>
+        {% endif %}
+    </header>
+
+    {% if project.image %}
+        <img src="{{ project.image }}" alt="{{ project.title }}">
+    {% endif %}
+
+    {{ project.content | markdownify }}
+    
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+</article>
