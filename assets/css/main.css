@@ -374,3 +374,18 @@ article header h1 { margin-bottom: 0.5rem; }
     line-height: 1.25;
   }
 }
+
+/* --- for phones 768px and smaller --- */
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+  }
+
+  .gallery-item {
+    flex: 0 0 80%;
+  }
+
+  .gallery-item img {
+    max-height: 200px;
+  }
+}
