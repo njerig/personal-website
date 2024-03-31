@@ -256,16 +256,15 @@ caption {
 .gallery {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  overflow-x: scroll;
 }
 
 .gallery-item {
-  flex: 0 0 40%;
+  flex: 0 0 43%;
   border: 1px solid rgb(190, 190, 190);
   margin: 0.5rem;
   padding: 0.5rem;
-  border-radius: 0.5rem;
 }
 .gallery-item h3 {
   margin: 0;
