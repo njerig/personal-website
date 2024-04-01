@@ -8,4 +8,5 @@ start_date: 2013-09
 end_date: 2014-02
 ---
 
-Write-up coming soon!
+## Links
+- Code: [github/blockparty](https://github.com/venicerobo/blockparty)
