@@ -57,5 +57,5 @@ The WeMos D1 Mini can be programmed using Arduino, so that's what I wrote C++ co
 - I think a fully built system would include the other two status access options I described in the beginning (a sign on top of the bathroom door and a small, out-of-the-way program that would show you the occupancy status of a favorited shower and toilet stall). Sadly, I didn't get to build these.
 
 ## Links
-- Sensor node code: [https://github.com/njerig/sos-sensor-node](https://github.com/njerig/sos-sensor-node)
-- Boilerplate central node code: [https://github.com/njerig/flask-socketio-mqtt-server](https://github.com/njerig/flask-socketio-mqtt-server)
+- Sensor node code: [github/njerig/sos-sensor-node](https://github.com/njerig/sos-sensor-node)
+- Boilerplate central node code: [github/njerig/flask-socketio-mqtt-server](https://github.com/njerig/flask-socketio-mqtt-server)

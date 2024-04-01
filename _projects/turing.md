@@ -9,4 +9,4 @@ end_date: 2015-02
 ---
 
 ## Links
-- Code: [venicerobo/cascadeeffect/turing](https://github.com/venicerobo/cascadeffect/tree/master/Turing)
+- Code: [github/venicerobo/cascadeeffect/turing](https://github.com/venicerobo/cascadeffect/tree/master/Turing)
