@@ -7,7 +7,7 @@ layout: blank
     <header>
         <h1>{{ project.title }}</h1>
         {% if project.subtitle %}
-        <h2 id="post-subtitle">{{project.subtitle}}</h2>
+        <p id="post-subtitle">{{project.subtitle}}</p>
         {% endif %}
 
         {% assign project_start_date =  project.start_date | date: "%b %Y" %}
@@ -16,12 +16,23 @@ layout: blank
         {% else %}
             {% assign project_end_date = "present" %}
         {% endif %}
+        {% assign project_tags = project.tags %}
 
-        {% if project_start_date %}
+        {% if project_start_date or project_tags %}
             <div id="post-info">
-                <div id="post-datetime">
-                    <time>{{ project_start_date }} – {{ project_end_date }}</time>
-                </div>
+                {% if project_start_date %}
+                    <div id="post-datetime">
+                        <time>{{ project_start_date }} – {{ project_end_date }}</time>
+                    </div>
+                {% endif %}
+                {% if project_tags %}
+                    <div id="tags">
+                        tagged: 
+                        {% for tag in project_tags %}
+                            <a class="tag" href="{{ site.baseurl }}/tagged/{{ tag | slugify }}">#{{ tag }}</a>
+                        {% endfor %}
+                    </div>
+                {% endif %}
             </div>
         {% endif %}
     </header>
@@ -31,6 +42,8 @@ layout: blank
     {% endif %}
 
     {{ project.content | markdownify }}
+
+    <img id="endmarker" src="/assets/img/favicon.png" alt="the end" style="max-width:30px;float:right;">
     
     <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </article>
