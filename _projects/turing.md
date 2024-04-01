@@ -8,4 +8,5 @@ start_date: 2014-09
 end_date: 2015-02
 ---
 
-Write-up coming soon!
+## Links
+- Code: [venicerobo/cascadeeffect/turing](https://github.com/venicerobo/cascadeffect/tree/master/Turing)
