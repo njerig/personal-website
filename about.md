@@ -3,7 +3,7 @@ title: About
 layout: about
 ---
 Hi, I'm Njeri Gachoka. I'm a budding computer scientist and engineer interested in research about and the prototyping of new computing systems. Current topics of interest to me include:
-- artificial intelligence (especially computer vision)
+- artificial intelligence (especially for computer vision applications)
 - operating system interfaces
 - embedded systems
 - formal systems
