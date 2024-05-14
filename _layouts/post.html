@@ -5,24 +5,44 @@ layout: blank
 {% assign post = page %}
 <article>
     <header>
-        <h1 style="">{{ post.title }}</h1>
+        <h1>{{ post.title }}</h1>
         {% if post.subtitle %}
-        <p id="post-subtitle">{{post.subtitle}}</p>
+        <h2 id="post-subtitle">{{post.subtitle}}</h2>
         {% endif %}
 
         {% assign post_date =  post.date | date: "%b %d, %Y" %}
         {% assign modified_date = post.last_modified_at | date: "%b %d, %Y" %}
 
-        <!-- <p id="post-date">created: <time>{{ post.date | date: "%d %b %Y" }}</time>{% if post_date != modified_date %}; modified: <time>{{ post.last_modified_at | date: "%d %b %Y" }}</time></p>{% endif %} -->
+        <div id="post-info">
+            <div id="post-datetime">
+                created: 
+                <time>{{ post_date }}</time>
+                {% if post_date != modified_date %}
+                    | last modified: 
+                    <time>{{ modified_date }}</time>
+                {% endif %}
+            </div>
+            {% if post.tags %}
+                <div class="tags">
+                    tagged: 
+                    {% for tag in post.tags %}
+                        <a class="tag" href="/tagged/{{ tag | slugify }}/">#{{ tag }}</a>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
     </header>
-<!-- 
-    <div style="border:2px dotted black;">
-        {% include toc.html html=content ordered=true sanitize=true h_min=2 %}
-    </div>
--->
-    {% include anchor_headings.html html=content beforeHeading=true h_max=4 anchorBody="§" anchorClass="heading-anchor"%}
+
+    {% unless post.toc == false %}
+        <div id="toc">
+            <h4 style="font-size: 1.5rem; margin: 1rem 0 0 1rem; font-weight: normal;">Table of Contents</h4>
+            {% include toc.html html=content sanitize=true h_min=1 h_max=3 %}
+        </div>
+    {% endunless %}
+
+    {% include anchor_headings.html html=content beforeHeading=true h_max=3 anchorBody="§" anchorClass="heading-anchor"%}
     
-    <div style="margin-top: 2rem;">
-        <!-- <img src="/assets/img/favicon.png" alt="the end" style="max-width:30px;display:inline;vertical-align: middle;float:right;"> --><span id="post-datetime">created: <time>{{ post.date | date: "%d %b %Y" }}</time>{% if post_date != modified_date %}; modified: <time>{{ post.last_modified_at | date: "%d %b %Y" }}</time></span>{% endif %}
-    </div>
+    <img id="endmarker" src="/assets/img/favicon.png" alt="the end" style="max-width:30px;float:right;">
+    
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 </article>
