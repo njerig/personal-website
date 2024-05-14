@@ -2,13 +2,16 @@
 title: About
 layout: about
 ---
-Hi, I'm Njeri Gachoka. I'm a 21-year-old budding computer scientist-engineer interested in research about and the prototyping of new computing systems. I especially enjoy working on browsers, operating systems, and AR/VR.
-
-I previously studied computer science at MIT.
+Hi, I'm Njeri Gachoka. I'm a budding computer scientist and engineer interested in research about and the prototyping of new computing systems. Current topics of interest to me include:
+- artificial intelligence (especially for computer vision applications)
+- operating system interfaces
+- embedded systems
+- formal systems
+- teaching (mathematics, computer science, and physics)
 
 
 Here's where you can find me **elsewhere on the web**.  
-Twitter: [@njerig_](//twitter.com/intent/follow?user_id=3318492236)  
 Email: njeri [at] gachoka [dot] org  
+Twitter: [@njerig_](//twitter.com/njerig_)  
 GitHub: [njerig](//github.com/njerig)  
-Keybase: [njerig](//keybase.io/njerig)  
+Keybase: [njerig](//keybase.io/njerig)
