@@ -4,7 +4,6 @@ gem "jekyll"
 
 group :jekyll_plugins do
   gem "jekyll-last-modified-at"
-  gem "jekyll-netlify-redirects"
   gem "jekyll-seo-tag"
   gem "pygments.rb"
 end
