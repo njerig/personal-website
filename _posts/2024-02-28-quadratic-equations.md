@@ -24,14 +24,13 @@ $$
 \right. 
 $$
 
-This allows us to factor the quadratic expression as:
+(The second case was not much harder; I told him to just divide the whole equation by $$a$$ and he'll end up in a situation similar to the first case.)
+
+This allows us to factor the quadratic expression into the form:
 
 $$(x - \underline{\hspace{1em}})(x - \underline{\hspace{1em}})$$
 
-However, there were two things that were not immediately obvious to me without using the guess-and-check method for factoring most of us learned in school.
-
-1. How do we mathematically determine which two numbers solve the system?
-2. How do we handle the case where $$a \neq 1$$?
+However, there was something not immediately obvious to me (without using the guess-and-check method for factoring most of us learned in school): **how do we mathematically determine which two numbers solve the system?**
 
 The student was also overwhelmed by the idea of having to remember the quadratic formula for the cases where the quadratic expression "cannot be factored cleanly".
 
