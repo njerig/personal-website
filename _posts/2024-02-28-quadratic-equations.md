@@ -38,7 +38,7 @@ While I told him something placating that day, deep down, I didn't really know w
 
 ## Enter Po-Shen Loh
 
-After digging around on YouTube for alternative methods, of solving quadratic equations, I found a video by Po-Shen Loh, Carnegie Mellon mathematics professor and former coach of the US International Mathematics Olympiad team.
+After digging around on YouTube for alternative methods of solving quadratic equations, I found a video by Po-Shen Loh, Carnegie Mellon mathematics professor and former coach of the US International Mathematics Olympiad team.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XKBX0r3J-9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
