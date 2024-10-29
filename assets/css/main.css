@@ -162,60 +162,61 @@ a.heading-anchor:hover {
 }
 
 /* CODE */
-/* all code */
 pre,
 code {
   font-family: 'Hack', monospace;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
   font-kerning: none;
-
-  background-color: #d8d8ff;
+  background-color: #f8f8f8;  /* lighter background */
+  border-radius: 4px;
+  overflow-x: auto;
+  white-space: pre;  /* important: preserves formatting */
 }
-/* inline code, no highlight*/
-code {
-  padding: 0.2rem 0.3rem;
-  border-radius: 3px;
 
+/* inline code */
+code {
+  padding: 0.2rem 0.4rem;
   white-space: nowrap;
 }
-/* inline code, highlight */
-code.highlight {
-  border-radius: 3px;
 
+/* block code */
+pre {
+  margin: 1em 0;
+  padding: 1rem;
+  border: 1px solid #d2d2d7;
+}
+
+/* Ensure code inside pre doesn't have double styling */
+pre code {
+  padding: 0;
+  background: none;
+  border: none;
+  white-space: pre;
+  overflow-x: auto;
+  display: block;
+}
+
+/* For pygments specifically */
+.highlight {
+  margin: 1em 0;
   background: #002451;
   color: #fff;
 }
-/* block code, no highlight */
-pre {
-  border-radius: 5px;
-  padding: 8px 12px;
-  overflow-x: auto;
-}
-/* block code, highlight */
-figure.highlight pre code {
-  display: block;
-  background-color: #002451;
-  color: #fff;
-  line-height: 1.5;
-  
-  counter-reset: code;
-}
-figure.highlight pre code div {
-  counter-increment: code;
+
+.highlight pre {
+  background: transparent;
+  color: inherit;
+  border: none;
+  margin: 0;
+  padding: 1rem;
 }
 
-figure.highlight pre code div::before{
-  content: counter(code);
-
-  /*hacky*/
-  width: 1rem;
-  text-align: right;
-
-  /*border*/
-  display: inline-block;
-  margin-right: 0.25em;
-  padding-right: 0.25em;
-  border-right: 1px solid gray;
+/* Line numbers if you're using them */
+.highlight pre code div::before {
+  color: #7c7c7c;
+  margin-right: 1em;
+  content: attr(data-line-number);
 }
 
 kbd {
