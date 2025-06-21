@@ -1,6 +1,7 @@
 ---
 title: Colophon
-description: What this site is made of. 
+description: What this site is made of.
+menus: 'main'
 ---
 
 ## Stack
