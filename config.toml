@@ -1,0 +1,29 @@
+baseURL = "https://hugo-starter-site.netlify.app"
+languageCode = "en-us"
+title = "njerig.me"
+copyright = "© 2025 Njeri Gachoka"
+
+rssLimit = 20
+staticDir = "static"
+canonifyURLs = true
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  
+[params]
+  description = "Hub for Njeri's blog posts, projects, and more."
+  author = "Njeri Gachoka"
+  email = "njerigachoka@gmail.com"
+  twitter = "njerig_"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    noClasses = false
+    tabWidth = 4
+
+[markup.goldmark.renderer]
+    unsafe = "true"

@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+    {{ .Content }}
+    <br>
+
+    {{ range .Pages.ByDate.Reverse }}
+        <div class="post-listing">
+            <span class="post-listing-delim">&#8727;</span>
+            <div class="post-listing-content">
+                <div class="post-listing-header">
+                    <div class="post-listing-title">{{ .Params.Title }}</div>
+                    <div class="post-listing-date">{{ .Date.Format "2006-01-02 15:04" }}</div>
+                </div>
+                <div class="post-text">{{.Content}}</div>
+            </div>
+        </div>
+    {{ end }}
+    
+{{ end }}

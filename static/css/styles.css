@@ -1,0 +1,263 @@
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 300; font-display: swap; src: url("/fonts/Inter-Light.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: italic; font-weight: 300; font-display: swap; src: url("/fonts/Inter-LightItalic.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/Inter-Regular.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: italic; font-weight: 400; font-display: swap; src: url("/fonts/Inter-Italic.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 500; font-display: swap; src: url("/fonts/Inter-Medium.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: italic; font-weight: 500; font-display: swap; src: url("/fonts/Inter-MediumItalic.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/Inter-SemiBold.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: italic; font-weight: 600; font-display: swap; src: url("/fonts/Inter-SemiBoldItalic.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/Inter-Bold.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: italic; font-weight: 700; font-display: swap; src: url("/fonts/Inter-BoldItalic.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 800; font-display: swap; src: url("/fonts/Inter-ExtraBold.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: italic; font-weight: 800; font-display: swap; src: url("/fonts/Inter-ExtraBoldItalic.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 900; font-display: swap; src: url("/fonts/Inter-Black.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-style: italic; font-weight: 900; font-display: swap; src: url("/fonts/Inter-BlackItalic.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 100; font-display: swap; src: url("/fonts/InterDisplay-Thin.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 100; font-display: swap; src: url("/fonts/InterDisplay-ThinItalic.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 200; font-display: swap; src: url("/fonts/InterDisplay-ExtraLight.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 200; font-display: swap; src: url("/fonts/InterDisplay-ExtraLightItalic.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 300; font-display: swap; src: url("/fonts/InterDisplay-Light.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 300; font-display: swap; src: url("/fonts/InterDisplay-LightItalic.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 400; font-display: swap; src: url("/fonts/InterDisplay-Regular.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 400; font-display: swap; src: url("/fonts/InterDisplay-Italic.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 500; font-display: swap; src: url("/fonts/InterDisplay-Medium.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 500; font-display: swap; src: url("/fonts/InterDisplay-MediumItalic.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 600; font-display: swap; src: url("/fonts/InterDisplay-SemiBold.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 600; font-display: swap; src: url("/fonts/InterDisplay-SemiBoldItalic.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 700; font-display: swap; src: url("/fonts/InterDisplay-Bold.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 700; font-display: swap; src: url("/fonts/InterDisplay-BoldItalic.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 800; font-display: swap; src: url("/fonts/InterDisplay-ExtraBold.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 800; font-display: swap; src: url("/fonts/InterDisplay-ExtraBoldItalic.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: normal; font-weight: 900; font-display: swap; src: url("/fonts/InterDisplay-Black.woff2") format("woff2"); }
+@font-face { font-family: "InterDisplay"; font-style: italic; font-weight: 900; font-display: swap; src: url("/fonts/InterDisplay-BlackItalic.woff2") format("woff2"); }
+@font-face {
+  font-family: "Handwriting";
+  font-style: normal;
+  src: url('/fonts/Handwriting-Regular.otf') format('opentype');
+  font-display: swap;
+  font-weight: 1 999;  
+}
+
+:root{
+  --sans-serif: Inter, system-ui;
+  --serif: InterDisplay, Times
+  --handwriting: Handwriting, cursive;
+  --background: #FFFFFF;
+  --text: #222;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  text-align: center;
+  background: var(--background);
+  margin: 0%;
+  color: var(--text);
+  font-size: 17px;
+  min-height: 100vh;
+  position: relative;
+}
+
+main{
+  padding: 5% 1.5rem 9rem 1.5rem;
+  box-sizing: border-box;
+  max-width: 42rem;
+  width: 100%;
+  line-height: 1.6em;
+  display: inline-block;
+  text-align: left;
+}
+
+header{
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 3em;
+}
+
+nav a{
+  color: inherit;
+  text-decoration: none;
+  padding: 4px 7px;
+  font-weight: 400;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.nav-left .site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-right {
+  display: flex;
+  gap: 1rem;
+}
+
+li{
+  margin: 0.5rem 0rem ;
+}
+
+h1{
+  font-size: 3rem;
+  line-height: 1.2em;
+  font-weight: 900;
+  margin: 1em 0em 0.5em 0em;
+  text-align: center;
+  max-width: 45rem;
+  display: inline-block;
+}
+
+h2, h3{
+  margin: 2em 0em 0.75em 0em;
+  line-height: 1.3em;
+}
+
+.post-listing{
+  margin-bottom: 1.8rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.post-listing-delim {
+  color: blue;
+  user-select: none;
+}
+
+.post-listing-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-listing-title {
+  font-weight: 600;
+}
+
+.post-listing-date {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  user-select: none;
+}
+
+.post-listing-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: baseline;
+}
+
+.post-listing-description{
+  font-size: 0.9rem;
+  color: grey;
+  width: 100%;
+  padding-top: 0.2rem;
+}
+
+a{
+  text-decoration: none;
+  color: var(--theme);
+}
+
+p a{
+  text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.tag-link{
+  opacity: 0.5;
+}
+
+.tag-link::before{
+  content: "#";
+}
+
+blockquote{
+  border-left: solid 4px var(--text);
+  padding-left: 1.5rem;
+  margin: 2rem 1rem;
+}
+
+section{
+  column-count: 2;
+  column-gap: 4rem;
+}
+
+p{
+  margin: 0px 0px 1.2rem 0px;
+}
+
+img{
+  width: 100%;
+  margin: 1rem 0rem;
+}
+
+table{
+  column-span: all;
+  width: 100%;
+  text-align: left;
+  margin: 2rem 0rem;  
+}
+
+th{
+  font-size: 2rem;
+}
+
+td{
+  padding: 1rem 0rem;
+}
+
+footer{
+  width: 100%;
+  border-top: solid 1px black;
+  padding: 1rem 1rem;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+#endmarker {
+  max-width: 30px;
+  float: right;
+}
+
+.post-signature {
+  margin-top: 4em;
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  .post, .post-date {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+ 

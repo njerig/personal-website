@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {{ partial "meta.html" . }}
+    <link rel="icon" type="image/png" href="/media/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/css/highlight.css" />
+</head>
+
+<body style="font-family: var(--sans-serif);"> 
+    {{ partial "header.html" . }}
+<main>
+    <article>
+        {{- block "main" . }}
+        {{- end }}
+    </article>      
+</main>
+    {{ partial "footer.html" . }}
+</body>
+</html>

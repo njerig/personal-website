@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+    <h1>{{.Title}}</h1>
+
+    {{ .Content }}
+    
+    <div class="post-signature">
+        <div >on {{.Date.Format "January 2, 2006"}} by <a href="/">Njeri Gachoka</a></div>
+        <img id="endmarker" src="/media/favicon.png" alt="The end." style="margin: 0;">
+    </div>
+{{ end }}
