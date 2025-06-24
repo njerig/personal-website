@@ -1,6 +1,6 @@
 ---
 title: I miss my Android phone...
-date: 2016-06-24T11:45:00-04:00
+date: 2025-06-24T11:45:00-04:00
 ---
 
 There's a difference between iOS and Android notifications that's worth harping on a little.
