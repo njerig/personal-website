@@ -16,8 +16,16 @@ canonifyURLs = true
   author = "Njeri Gachoka"
   email = "njerigachoka@gmail.com"
   twitter = "njerig_"
+  math = true
 
 [markup]
+  [markup.goldmark]
+      [markup.goldmark.extensions]
+        [markup.goldmark.extensions.passthrough]
+          enable = true
+          [markup.goldmark.extensions.passthrough.delimiters]
+            block = [['\[', '\]'], ['$$', '$$']]
+            inline = [['\(', '\)'], ['$', '$']]
   [markup.highlight]
     codeFences = true
     guessSyntax = true

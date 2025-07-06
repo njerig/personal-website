@@ -6,6 +6,9 @@
     <link rel="icon" type="image/png" href="/media/favicon.png">
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
     <link rel="stylesheet" type="text/css" href="/css/highlight.css" />
+    {{ if .Param "math" }}
+        {{ partialCached "math.html" . }}
+    {{ end }}
 </head>
 
 <body style="font-family: var(--sans-serif);"> 
