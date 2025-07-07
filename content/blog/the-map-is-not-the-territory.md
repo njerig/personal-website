@@ -2,13 +2,15 @@
 title: '"The map is not the territory"'
 description: Exploring an idea critical to human progress
 date: 2025-07-06
+params:
+    thanks: Thanks to 2020 tech-adjacent Twitter, Nungari Gachoka, various friends and acquaintances, and all of my science and math teachers for helping me with the ideas in this post.
 ---
 The COVID lockdown era was a bit of a blur for me, but one distinct thing that I can remember is the idea
 
-> A map is not the territory it represents, but, if correct, it has a similar structure to the territory, which accounts for its usefulness.
-> - Alfred Korzybski, in _A Non-Aristotelian System and Its Necessity for Rigour in Mathematics and Physics_
+> A map is not the territory it represents, but, if correct, it has a similar structure to the territory, which accounts for its usefulness.  
+> — Alfred Korzybski, in _A Non-Aristotelian System and Its Necessity for Rigour in Mathematics and Physics_
 
-Allow me to give myself less credit – I did not learn this idea from the quoted paper; instead, I learned this idea over the course of a few months reading tweets from tech-adjacent / post-rat Twitter back in 2020. This completely altered my mind in regard to science and human progress, so below is an explanation of its meaning and implications.
+Allow me to give myself less credit — I did not learn this idea from the quoted paper; instead, I learned this idea over the course of a few months reading tweets from tech-adjacent / post-rat Twitter back in 2020. This completely altered my mind in regard to science and human progress, so below is an explanation of its meaning and implications.
 
 ## Science, as Taught to Me
 Elementary, middle, and high school entailed covering the basic principles underlying the physical and life sciences. I had learned about the connection between parabolas and projectile motion, the different kinds of organelles, and the two chemical equations governing life on Earth (cellular respiration and photosynthesis), amongst other things. My favorite subject in school throughout the years had always been science because I'd thought that _science was all about finding the true nature of reality_. Ideas like finding a "Theory of Everything" or a cure to a disease without any side effects fascinated me to no end, and sent me down a STEM track in late high school and college.
@@ -43,7 +45,3 @@ To me, this idea made every science and math class I took after this time secret
 
 ## Takeaway
 _I think what we're truly getting at in the scientific enterprise is more and more accurate models, not a true understanding of the universe._ What I find as a scientist may be true for me and not for thee. And while this may be a bit disappointing to the more idealistic among us, I think it's a useful point to harp on over and over again.
-
----
-
-_Thanks to 2020 tech-adjacent Twitter, Nungari Gachoka, various friends and acquaintances, and all of my science and math teachers for helping me with the ideas in this post._
