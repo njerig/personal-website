@@ -4,8 +4,13 @@
 
     {{ .Content }}
     
-    <div class="post-signature">
-        <div >on {{.Date.Format "January 2, 2006"}} by <a href="/">Njeri Gachoka</a></div>
-        <img id="endmarker" src="/media/favicon.png" alt="The end." style="margin: 0;">
+    <div class="post-footer">
+        {{ if .Params.Thanks }}
+        <div id="thanks">{{.Params.Thanks}}</div>
+        {{ end }}
+        <div id="end">
+            <div id="signature">on {{.Date.Format "January 2, 2006"}} by <a href="/">Njeri Gachoka</a></div>
+            <img id="endmarker" src="/media/favicon.png" alt="The end." style="margin: 0;">
+        </div>
     </div>
 {{ end }}
