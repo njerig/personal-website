@@ -22,35 +22,21 @@
             }
           },
           {
-            "id": "6cdeb1fd53313898",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/notebook/joshua-tree.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "joshua-tree"
-            }
-          },
-          {
             "id": "92c9cb02b5adeb7d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/blog/2025-09-system-update.md",
+                "file": "content/notebook/no-cheez-whiz.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-09-system-update"
+              "title": "no-cheez-whiz"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -201,11 +187,24 @@
   },
   "active": "92c9cb02b5adeb7d",
   "lastOpenFiles": [
+    "content/notebook/vienna-opera.md",
+    "content/notebook/no-cheez-whiz.md",
+    "content/notebook/joshua-tree.md",
+    "content/notebook/ichichi.md",
+    "content/notebook/blogging-unsolved.md",
+    "content/notebook/android-ios-notifications.md",
+    "content/notebook/_index.md",
+    "content/blog/2025-09-system-update.md",
+    "content/_index.md",
+    "archetypes/default.md",
+    "content/colophon.md",
+    "content/notebook/statistics.md",
+    "content/notebook/notebooks.md",
+    "content/notebook/nairobi.md",
+    "content/notebook/moe.md",
     "layouts/shortcodes/spotify.html",
     "layouts/shortcodes",
     "content/blog/_index.md",
-    "content/_index.md",
-    "content/blog/2025-09-system-update.md",
     "public/blog/blog/2025-09-system-update/index.html",
     "public/blog/blog/2025-09-system-update",
     "public/blog/blog",
@@ -213,9 +212,6 @@
     "public/media/wavy.jpg",
     "public/blog/2025-09-system-update/index.html",
     "public/blog/2025-09-system-update",
-    "content/notebook/joshua-tree.md",
-    "content/notebook/nairobi.md",
-    "content/notebook/ichichi.md",
     "static/media/me-at-MIT.jpg",
     "me-at-MIT.jpg",
     "22840d8d-d9ef-446e-b4e0-c47806d37cd8.jpg",
@@ -229,12 +225,9 @@
     "public/media",
     "public/fonts/Inter-BlackItalic.woff2",
     "public/fonts/Handwriting-Regular.otf",
-    "public/fonts/Inter-SemiBoldItalic.woff2",
     "content/blog/this-is-a-test.md",
     "content/blog/quadratic-equations.md",
     "content/blog/testing.md",
-    "content/blog/building-ros2-jazzy-arm-mac.md",
-    "content/notebook/_index.md",
-    "content/notebook/android-ios-notifications.md"
+    "content/blog/building-ros2-jazzy-arm-mac.md"
   ]
 }
