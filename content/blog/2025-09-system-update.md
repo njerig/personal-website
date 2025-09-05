@@ -5,7 +5,7 @@ description: In which I evaluate the past month using tech-adjacent subtitles
 slug: blog/2025-09-system-update
 ---
 ## Currently Running
-![Me standing outside the MIT Media Lab](/media/me-at-MIT.jpg)
+![Me standing outside the MIT Media Lab](media/me-at-MIT.jpg)
 
 I just wrapped up an internship last week with the Fluid Interfaces group at MIT Media Lab. I can't say too much about what I did yet (think robotics and HCI) as I'm still working on the project remotely. Overall, I had a fantastic time at MIT and in Boston and hope to be back soon.
 
