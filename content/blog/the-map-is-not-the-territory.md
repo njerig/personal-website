@@ -3,11 +3,14 @@ title: '"The map is not the territory"'
 description: Exploring an idea critical to human progress
 date: 2025-07-06
 params:
+    images: 
+    - "media/this-is-not-a-pipe.png"
     thanks: Thanks to 2020 tech-adjacent Twitter, Nungari Gachoka, various friends and acquaintances, and all of my science and math teachers for helping me with the ideas in this post.
 ---
 The COVID lockdown era was a bit of a blur for me, but one distinct thing that I can remember is the idea
 
-> A map is not the territory it represents, but, if correct, it has a similar structure to the territory, which accounts for its usefulness.  
+> A map is not the territory it represents, but, if correct, it has a similar structure to the territory, which accounts for its usefulness. 
+> 
 > — Alfred Korzybski, in _A Non-Aristotelian System and Its Necessity for Rigour in Mathematics and Physics_
 
 Allow me to give myself less credit — I did not learn this idea from the quoted paper; instead, I learned this idea over the course of a few months reading tweets from tech-adjacent / post-rat Twitter back in 2020. This completely altered my mind in regard to science and human progress, so below is an explanation of its meaning and implications.
@@ -36,7 +39,7 @@ At some level, I think we all know this. We know that the meteorologist on our l
 ## Why is This True?
 If you were to somehow make a perfect model of the universe (including our extremely complex world) as a matrix, you'd notice that the universe is an extremely high-dimensional entity. The number of numbers needed to describe the current state of the universe, the past states that led to this current state, and somehow predict future states with 100% fidelity is infinite.
 
-Now, our ape-ish brains (as great as they are) cannot comprehend this level of complexity. Most people (including me) can't even comprehend a [four-dimensional hypercube](https://en.wikipedia.org/wiki/Tesseract), let aloone the nature of the universe. Thus, in our poetic but somewhat futile quest to comprehend the world we live in and our place in it, we perform a linear transformation – we reduce the $n$-dimensional universe all the way down to a set of up-to-$k$-dimensional models, where $n >> k$ (and, as far as I know, $k$ isn't predetermined).
+Now, our ape-ish brains (as great as they are) cannot comprehend this level of complexity. Most people (including me) can't even comprehend a [four-dimensional hypercube](https://en.wikipedia.org/wiki/Tesseract), let alone the nature of the universe. Thus, in our poetic but somewhat futile quest to comprehend the world we live in and our place in it, we perform a linear transformation – we reduce the $n$-dimensional universe all the way down to a set of up-to-$k$-dimensional models, where $n >> k$ (and, as far as I know, $k$ isn't predetermined).
 
 Assuming that our matrix model of the universe is correct, any dimensional reduction of that model would result in a _loss of rank_. To emphasize this point: our reduction is lossy – it loses critical information about the state of the entity we're trying to model. And this is the case for _every single model_ you can think of: mechanics (classical and quantum), our understanding of the human brain, and climate models, amongst other things.
 
