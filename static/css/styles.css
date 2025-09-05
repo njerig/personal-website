@@ -170,17 +170,26 @@ h2, h3{
 }
 
 a{
-  text-decoration: none;
   color: var(--theme);
+  text-underline-offset: 2px;
 }
 
-p a{
-  text-decoration: underline;
-    text-underline-offset: 2px;
-}
+a[href]:not(:where(
+  /* exclude hash only links */
+  [href^="#"],
+  /* exclude javascript only links */
+  [href^="javascript:" i],  
+  /* exclude relative but not double slash only links */
+  [href^="/"]:not([href^="//"]),
+  /* domains to exclude */
+  [href*="//njerig.me"],
+  [href*="//localhost"]
 
-a:hover{
-  text-decoration: underline;
+)):after {
+  position: relative;
+  top: -0.5em;
+  font-size: 0.7em;
+  content: "↗";
 }
 
 .tag-link{
