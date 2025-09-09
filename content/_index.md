@@ -3,7 +3,7 @@ title: Njeri Gachoka
 description: Hub for Njeri's blog posts, projects, and more.
 ---
 
-![Photo of Njeri](media/njeri.jpg)
+![Photo of Njeri](media/njeri.webp)
 
 Hi, I'm Njeri.
 
