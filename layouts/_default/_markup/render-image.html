@@ -1,0 +1,44 @@
+{{- /* Netlify Image CDN for Markdown images
+    * - Works for any image committed to /static (e.g. /static/media/...)
+    * - Skips external URLs (http/https)
+    * - Generates responsive srcset + lazy loading
+    * - Uses 'sizes' hint that you can override per-page via .Params.imageSizes
+    */ -}}
+
+{{- $dest := .Destination | safeURL -}}
+
+{{- /* If the image is external, don’t proxy through Netlify */ -}}
+{{- if or (hasPrefix $dest "http://") (hasPrefix $dest "https://") -}}
+ <img src="{{ $dest }}" alt="{{ .Text }}" loading="lazy" decoding="async" />
+{{- else -}}
+ {{- $fit := "cover" -}}
+ {{- $quality := 80 -}}
+ {{- /* Default responsive widths (px). Adjust if your layout needs larger/smaller. */ -}}
+ {{- $widths := slice 360 600 800 1200 1600 -}}
+
+ {{- /* Build srcset using Netlify’s transformation endpoint:
+       /.netlify/images?url=<relative path>&w=<width>&fit=<mode>&q=<0-100>
+       (Works for any relative path deployed on your site.) */ -}}
+ {{- $srcset := slice -}}
+ {{- range $w := $widths -}}
+   {{- $u := printf "/.netlify/images?url=%s&w=%d&fit=%s&q=%d" ($dest | urlquery) $w $fit $quality -}}
+   {{- $srcset = $srcset | append (printf "%s %dw" $u $w) -}}
+ {{- end -}}
+
+ {{- /* Fallback src: choose the middle width */ -}}
+ {{- $fallbackW := index $widths (div (len $widths) 2) -}}
+ {{- $src := printf "/.netlify/images?url=%s&w=%d&fit=%s&q=%d" ($dest | urlquery) $fallbackW $fit $quality -}}
+
+ {{- /* Sizes hint: override per page with 'imageSizes' in front matter if needed */ -}}
+ {{- $sizes := or .Page.Params.imageSizes "100vw" -}}
+
+ <img
+   src="{{ $src }}"
+   srcset="{{ delimit $srcset ", " }}"
+   sizes="{{ $sizes }}"
+   alt="{{ .Text }}"
+   loading="lazy"
+   decoding="async"
+   width="{{ $fallbackW }}"
+ />
+{{- end -}}
