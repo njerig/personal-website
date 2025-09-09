@@ -16,9 +16,13 @@
   for = "/media/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
   for = "/media/Gachoka_Njeri_resume.pdf"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
   for = "/resume"
   [headers.values]
     Cache-Control = "public, max-age=60"
