@@ -8,11 +8,24 @@
   HUGO_ENV = "production"
   TZ = "America/Los Angeles"
 
+[context.production]
+  [context.production.environment]
+    NETLIFY_IMAGE_CDN = "true"
+
 [[headers]]
   for = "/media/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+  for = "/media/Gachoka_Njeri_resume.pdf"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+  for = "/resume"
+  [headers.values]
+    Cache-Control = "public, max-age=60"
+    Content-Disposition = "inline; filename=\"Gachoka_Njeri_resume.pdf\""
+    X-Robots-Tag = "noindex, nofollow"
 
-[context.production]
-  [context.production.environment]
-    NETLIFY_IMAGE_CDN = "true"
+[[redirects]]
+  from = "/resume"
+  to = "/media/Gachoka_Njeri_resume.pdf"
+  status = 200
