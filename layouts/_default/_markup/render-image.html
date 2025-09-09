@@ -11,7 +11,7 @@
 {{- if or (hasPrefix $dest "http://") (hasPrefix $dest "https://") -}}
  <img src="{{ $dest }}" alt="{{ .Text }}" loading="lazy" decoding="async" />
 {{- else -}}
- {{- $fit := "cover" -}}
+ {{- $fit := "inside" -}}
  {{- $quality := 80 -}}
  {{- /* Default responsive widths (px). Adjust if your layout needs larger/smaller. */ -}}
  {{- $widths := slice 360 600 800 1200 1600 -}}
@@ -40,5 +40,6 @@
    loading="lazy"
    decoding="async"
    width="{{ $fallbackW }}"
+   onerror="this.src='{{ $dest }}'; this.srcset=''; this.onerror=null;"
  />
 {{- end -}}
