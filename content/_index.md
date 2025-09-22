@@ -7,11 +7,15 @@ description: Hub for Njeri's blog posts, projects, and more.
 
 Hi, I'm Njeri.
 
-I'm working on autonomous vehicle engineering and safety with Cruz Control and AIEA, and building electric vehicle dashboards with Formula Slug. Last summer I worked in the [UCLA Biomechatronics Lab](https://biomechatronics.ucla.edu/) (supported by Amazon) on a robotics project for potential use at the 2028 Olympic and Paralympic Games, and this summer I'll be working in the [Fluid Interfaces Group](https://www.media.mit.edu/groups/fluid-interfaces/overview/) at the MIT Media Lab on a project integrating augmented reality with brain-computer interfaces.
+I'm a senior at UC Santa Cruz studying Computer Science (with a minor in Computer Engineering). I work on autonomous vehicle engineering and safety with Cruz Control and AIEA, and building electric vehicle dashboards with Formula Slug. 
 
-I'm especially drawn to projects that blend hardware and software, including in robotics, next-generation computing systems, embedded systems, and sensors. I also enjoy teaching computer science, mathematics, and physics.
+## Other recent work
+Last summer I worked in the [UCLA Biomechatronics Lab](https://biomechatronics.ucla.edu/) on a robotics project for potential use at the 2028 Olympic and Paralympic Games. This summer I began working in the [Fluid Interfaces Group](https://www.media.mit.edu/groups/fluid-interfaces/overview/) at the MIT Media Lab on a project examining human relationships with digital and robotic entities.
 
-Here's where you can find me elsewhere on the web.
+## Interests
+In general, I'm most drawn to the engineering of adaptive, context-aware systems like robots and next-generation computing interfaces enabled by AR devices and BCIs. I love working horizontally across the hardware, software, and mechanical domains. I also enjoy teaching computer science, mathematics, and physics.
+
+## Elsewhere on the web
 
 Email: njeri [at] gachoka [dot] org  
 GitHub: [njerig](//github.com/njerig)
