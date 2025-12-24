@@ -7,10 +7,10 @@ description: Hub for Njeri's blog posts, projects, and more.
 
 Hi, I'm Njeri.
 
-I'm a senior at UC Santa Cruz studying Computer Science (with a minor in Computer Engineering). I work on autonomous vehicle engineering and safety with Cruz Control and AIEA, and building electric vehicle dashboards with Formula Slug. 
+I'm a senior at UC Santa Cruz studying Computer Science (with a minor in Computer Engineering). I currently lead a joint venture between Cruz Control and the AI Explainability and Accountability Lab exploring autonomous vehicle engineering and safety, and work on UAV crop surveying with the Human-Aware Robotics Exploration Lab.
 
 ## Other recent work
-Last summer I worked in the [UCLA Biomechatronics Lab](https://biomechatronics.ucla.edu/) on a robotics project for potential use at the 2028 Olympic and Paralympic Games. This summer I began working in the [Fluid Interfaces Group](https://www.media.mit.edu/groups/fluid-interfaces/overview/) at the MIT Media Lab on a project examining human relationships with digital and robotic entities.
+This past summer I began working in the [Fluid Interfaces Group](https://www.media.mit.edu/groups/fluid-interfaces/overview/) at the MIT Media Lab on a project examining human relationships with digital and robotic entities. Last summer I worked in the [UCLA Biomechatronics Lab](https://biomechatronics.ucla.edu/) on a robotics project for potential use at the 2028 Olympic and Paralympic Games.
 
 ## Interests
 In general, I'm most drawn to the engineering of adaptive, context-aware systems like robots and next-generation computing interfaces enabled by AR devices and BCIs. I love working horizontally across the hardware, software, and mechanical domains. I also enjoy teaching computer science, mathematics, and physics.
