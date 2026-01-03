@@ -1,7 +1,7 @@
 ---
 title: "System Update: January 2026"
 date: 2026-01-02
-subtitle: In which I attempt to ring in the new year with a good writing habit
+description: In which I attempt to ring in the new year with a good writing habit
 slug: 2026-01-system-update
 ---
 ## Currently Running
