@@ -241,10 +241,28 @@ footer{
   margin: 1em 0;
 }
 
+.home-photo {
+  float: left;
+  max-width: 50%;
+  margin: 0 1rem .5rem 0;
+}
+
+.home-photo-clear {
+  clear: both;
+}
+
 @media (max-width: 600px) {
   .post, .post-date {
     flex-direction: column;
     gap: 0;
   }
+
+  .home-photo {
+    float: none;
+    display: block;
+    max-width: 100%;
+    margin: 0 0 1.5rem 0;
+  }
+
 }
  
